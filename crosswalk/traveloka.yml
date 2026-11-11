@@ -22,7 +22,7 @@ concepts:
     properties:
       name: propertyName
       hotel_id: propertyId
-    core_coverage: 0.333
+    core_coverage: 0.25
     evidence:
     - openapi/_original/traveloka-loka-api-v2.json#GET /properties/content/hotel
     - openapi/_original/traveloka-loka-partner-api-openapi.yml#GET /properties/content/hotel

@@ -105,8 +105,8 @@ findings:
     hotel stays, flights, tours and car rentals are all bookings with different shapes."
   - "A hotel agrees on name, address and id; amenities and star rating are modelled by too few
     to share."
-  - "Flights agree on nothing, not even an id (42%): NDC-style offers, schedules and flight
-    status are three different resources published under one word."
+  - "Flights agree on a flight number and a status, and little else: NDC-style offers,
+    schedules and flight status are three different resources published under one word."
   - "Guests and rooms are thin (5-7 providers): property-management systems and channel
     managers keep their APIs to partners."
 decisions:

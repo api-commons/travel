@@ -8,27 +8,29 @@
     "id": {
       "type": "string",
       "x-commons-tier": "core",
-      "x-commons-share": 0.772,
-      "x-commons-providers": 44,
+      "x-commons-share": 0.825,
+      "x-commons-providers": 47,
       "x-commons-spellings": [
         "id",
         "bookingId",
         "uuid",
-        "reservationId",
         "reservation_id",
-        "code"
+        "code",
+        "reservationId",
+        "ReservationId",
+        "recordId"
       ]
     },
     "status": {
       "type": "string",
       "x-commons-tier": "core",
-      "x-commons-share": 0.702,
-      "x-commons-providers": 40,
+      "x-commons-share": 0.719,
+      "x-commons-providers": 41,
       "x-commons-spellings": [
         "status",
         "bookingStatus",
-        "reservation_status",
         "state",
+        "reservation_status",
         "reservationStatus",
         "Status"
       ]
@@ -36,15 +38,15 @@
     "check_in": {
       "type": "string",
       "x-commons-tier": "extended",
-      "x-commons-share": 0.368,
-      "x-commons-providers": 21,
+      "x-commons-share": 0.386,
+      "x-commons-providers": 22,
       "x-commons-spellings": [
         "arrival",
         "start",
         "check_in",
         "startDate",
-        "arrival_date",
         "checkin_date",
+        "arrival_date",
         "checkin",
         "from"
       ]
@@ -52,8 +54,8 @@
     "check_out": {
       "type": "string",
       "x-commons-tier": "extended",
-      "x-commons-share": 0.368,
-      "x-commons-providers": 21,
+      "x-commons-share": 0.386,
+      "x-commons-providers": 22,
       "x-commons-spellings": [
         "departure",
         "end",
@@ -65,35 +67,34 @@
         "to"
       ]
     },
-    "created_at": {
-      "type": "string",
-      "x-commons-tier": "extended",
-      "x-commons-share": 0.368,
-      "x-commons-providers": 21,
-      "x-commons-spellings": [
-        "createdAt",
-        "created_at",
-        "created",
-        "booked_at",
-        "creationDate"
-      ],
-      "format": "date-time"
-    },
     "guest_ids": {
       "type": "object",
       "x-commons-tier": "extended",
-      "x-commons-share": 0.368,
-      "x-commons-providers": 21,
+      "x-commons-share": 0.351,
+      "x-commons-providers": 20,
       "x-commons-spellings": [
         "guests",
         "customer",
         "guest",
         "booker",
         "customer_id",
-        "travellers",
         "travelers",
-        "guest_id"
+        "guest_id",
+        "customerId"
       ]
+    },
+    "created_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.333,
+      "x-commons-providers": 19,
+      "x-commons-spellings": [
+        "createdAt",
+        "created_at",
+        "created",
+        "booked_at"
+      ],
+      "format": "date-time"
     },
     "metadata": {
       "type": "object",
@@ -107,6 +108,18 @@
         "metaData",
         "custom",
         "custom_fields"
+      ]
+    },
+    "currency": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.246,
+      "x-commons-providers": 14,
+      "x-commons-spellings": [
+        "currency",
+        "currency_code",
+        "currencyCode",
+        "CurrencyCode"
       ]
     },
     "updated_at": {
@@ -124,16 +137,17 @@
       ],
       "format": "date-time"
     },
-    "currency": {
+    "description": {
       "type": "string",
       "x-commons-tier": "extended",
       "x-commons-share": 0.211,
       "x-commons-providers": 12,
       "x-commons-spellings": [
-        "currency",
-        "currency_code",
-        "currencyCode",
-        "CurrencyCode"
+        "notes",
+        "description",
+        "summary",
+        "note",
+        "details"
       ]
     },
     "hotel_id": {
@@ -160,6 +174,7 @@
         "price",
         "total_amount",
         "total_price",
+        "amount",
         "Amount"
       ]
     }

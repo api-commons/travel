@@ -24,7 +24,7 @@ concepts:
       currency: currency_code
       check_in: start_date
       check_out: end_date
-    core_coverage: 0.0
+    core_coverage: 0.25
     evidence:
     - openapi/_original/amex-gbt-reporting-api-openapi.json#POST /v1/transactions/hotel
     - openapi/_original/amex-gbt-service-bi-openapi.json#POST /v1/transactions/hotel

@@ -8,14 +8,15 @@
     "name": {
       "type": "string",
       "x-commons-tier": "core",
-      "x-commons-share": 0.783,
-      "x-commons-providers": 18,
+      "x-commons-share": 0.913,
+      "x-commons-providers": 21,
       "x-commons-spellings": [
         "name",
         "hotelName",
         "label",
         "property_name",
         "title",
+        "Name",
         "propertyName",
         "hotel_name"
       ]
@@ -23,18 +24,19 @@
     "address": {
       "type": "object",
       "x-commons-tier": "core",
-      "x-commons-share": 0.652,
-      "x-commons-providers": 15,
+      "x-commons-share": 0.696,
+      "x-commons-providers": 16,
       "x-commons-spellings": [
         "address",
-        "location"
+        "location",
+        "Address"
       ]
     },
     "id": {
       "type": "string",
       "x-commons-tier": "core",
-      "x-commons-share": 0.522,
-      "x-commons-providers": 12,
+      "x-commons-share": 0.609,
+      "x-commons-providers": 14,
       "x-commons-spellings": [
         "id",
         "code"
@@ -42,33 +44,47 @@
     },
     "currency": {
       "type": "string",
-      "x-commons-tier": "extended",
-      "x-commons-share": 0.478,
-      "x-commons-providers": 11,
+      "x-commons-tier": "core",
+      "x-commons-share": 0.522,
+      "x-commons-providers": 12,
       "x-commons-spellings": [
         "currency",
         "currency_code",
         "currencyCode"
       ]
     },
+    "amenities": {
+      "type": "array",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.391,
+      "x-commons-providers": 9,
+      "x-commons-spellings": [
+        "amenities",
+        "facilities",
+        "Amenities"
+      ]
+    },
     "description": {
       "type": "string",
       "x-commons-tier": "extended",
-      "x-commons-share": 0.348,
-      "x-commons-providers": 8,
+      "x-commons-share": 0.391,
+      "x-commons-providers": 9,
       "x-commons-spellings": [
         "description",
         "notes"
       ]
     },
-    "amenities": {
-      "type": "array",
+    "star_rating": {
+      "type": "string",
       "x-commons-tier": "extended",
-      "x-commons-share": 0.304,
-      "x-commons-providers": 7,
+      "x-commons-share": 0.348,
+      "x-commons-providers": 8,
       "x-commons-spellings": [
-        "amenities",
-        "facilities"
+        "starRating",
+        "category",
+        "stars",
+        "rating",
+        "StarRating"
       ]
     },
     "check_in": {
@@ -80,8 +96,8 @@
         "checkin",
         "start_date",
         "check_in",
-        "from",
         "checkIn",
+        "startDate",
         "CheckIn",
         "check_in_date"
       ]
@@ -95,8 +111,8 @@
         "checkout",
         "end_date",
         "check_out",
-        "to",
         "checkOut",
+        "endDate",
         "CheckOut",
         "check_out_date"
       ]
@@ -110,6 +126,16 @@
         "city"
       ]
     },
+    "time_zone": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.261,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "timeZone",
+        "timezone"
+      ]
+    },
     "hotel_id": {
       "type": "string",
       "x-commons-tier": "extended",
@@ -120,6 +146,16 @@
         "property_id",
         "hotel_id",
         "propertyId"
+      ]
+    },
+    "images": {
+      "type": "array",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.217,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "images",
+        "Images"
       ]
     },
     "latitude": {
@@ -150,26 +186,14 @@
         "property_type"
       ]
     },
-    "star_rating": {
+    "status": {
       "type": "string",
       "x-commons-tier": "extended",
       "x-commons-share": 0.217,
       "x-commons-providers": 5,
       "x-commons-spellings": [
-        "stars",
-        "rating",
-        "starRating",
-        "category"
-      ]
-    },
-    "time_zone": {
-      "type": "string",
-      "x-commons-tier": "extended",
-      "x-commons-share": 0.217,
-      "x-commons-providers": 5,
-      "x-commons-spellings": [
-        "timezone",
-        "timeZone"
+        "status",
+        "state"
       ]
     }
   },

@@ -28,6 +28,9 @@ concepts:
       - currency
       - currency_code
       description: description
+      star_rating:
+      - category
+      - stars
       check_in:
       - checkin
       - check_in
@@ -37,9 +40,8 @@ concepts:
       hotel_id:
       - property_id
       - hotel_id
-      star_rating:
-      - category
-      - stars
+      images: images
+      status: status
     core_coverage: 1.0
     evidence:
     - openapi/_original/booking-com-connect-api-openapi.yml#GET /demand-api-v2-compatible/hotels
@@ -61,12 +63,12 @@ concepts:
     path_segment:
     - flights
     properties:
+      status: status
       id: id
       currency: currency
       price: price
       itineraries: itineraries
-      status: status
-    core_coverage: 0.0
+    core_coverage: 0.5
     evidence:
     - openapi/_original/booking-com-demand-api-3-1-openapi.yml#POST /orders/details/flights
     - openapi/_original/booking-com-demand-api-3-2-beta-openapi.yml#POST /orders/details/flights

@@ -83,46 +83,48 @@ concepts:
     properties:
     - name: id
       tier: core
-      providers: 44
-      share: 0.772
+      providers: 47
+      share: 0.825
       type: string
       spellings:
       - id
       - bookingId
       - uuid
-      - reservationId
       - reservation_id
       - code
+      - reservationId
+      - ReservationId
+      - recordId
     - name: status
       tier: core
-      providers: 40
-      share: 0.702
+      providers: 41
+      share: 0.719
       type: string
       spellings:
       - status
       - bookingStatus
-      - reservation_status
       - state
+      - reservation_status
       - reservationStatus
       - Status
     - name: check_in
       tier: extended
-      providers: 21
-      share: 0.368
+      providers: 22
+      share: 0.386
       type: string
       spellings:
       - arrival
       - start
       - check_in
       - startDate
-      - arrival_date
       - checkin_date
+      - arrival_date
       - checkin
       - from
     - name: check_out
       tier: extended
-      providers: 21
-      share: 0.368
+      providers: 22
+      share: 0.386
       type: string
       spellings:
       - departure
@@ -133,21 +135,10 @@ concepts:
       - checkout_date
       - checkout
       - to
-    - name: created_at
-      tier: extended
-      providers: 21
-      share: 0.368
-      type: string
-      spellings:
-      - createdAt
-      - created_at
-      - created
-      - booked_at
-      - creationDate
     - name: guest_ids
       tier: extended
-      providers: 21
-      share: 0.368
+      providers: 20
+      share: 0.351
       type: object
       spellings:
       - guests
@@ -155,9 +146,19 @@ concepts:
       - guest
       - booker
       - customer_id
-      - travellers
       - travelers
       - guest_id
+      - customerId
+    - name: created_at
+      tier: extended
+      providers: 19
+      share: 0.333
+      type: string
+      spellings:
+      - createdAt
+      - created_at
+      - created
+      - booked_at
     - name: metadata
       tier: extended
       providers: 15
@@ -170,6 +171,16 @@ concepts:
       - metaData
       - custom
       - custom_fields
+    - name: currency
+      tier: extended
+      providers: 14
+      share: 0.246
+      type: string
+      spellings:
+      - currency
+      - currency_code
+      - currencyCode
+      - CurrencyCode
     - name: updated_at
       tier: extended
       providers: 14
@@ -182,16 +193,17 @@ concepts:
       - lastModified
       - modified_at
       - updated
-    - name: currency
+    - name: description
       tier: extended
       providers: 12
       share: 0.211
       type: string
       spellings:
-      - currency
-      - currency_code
-      - currencyCode
-      - CurrencyCode
+      - notes
+      - description
+      - summary
+      - note
+      - details
     - name: hotel_id
       tier: extended
       providers: 12
@@ -214,49 +226,50 @@ concepts:
       - price
       - total_amount
       - total_price
+      - amount
       - Amount
-    long_tail_count: 1077
+    long_tail_count: 1130
     long_tail_sample:
-    - description
     - adults
-    - confirmation_number
-    - room_id
     - type
     - channel
-    - limit
-    - children
-    - contact
-    - email
-    - location_id
+    - confirmation_number
     - name
-    - passengers
+    - room_id
+    - email
+    - children
+    - location
+    - location_id
     - cancellation
+    - contact
     - duration
-    - offset
-    - pagination
+    - passengers
+    - rate_plan_id
     - reason
+    - trip_id
     - availability
     - cancelled_at
     - comments
     - company
     - customer_note
-    - items
-    - location
+    - event_type
+    - first_name
+    - last_name
+    - limit
     - nights
     - order
-    - orders
-    - payment
-    - payment_type
     - payments
     - product
     - product_id
-    - rate_plan_id
+    - reservation_type
     - services
     - special_request
     - start_at
-    - trip_id
     - add_ons
     - address
+    - availability_id
+    - bill_amount
+    - booked_by
   hotel:
     segments_seen:
       hotels: 12
@@ -303,8 +316,8 @@ concepts:
     properties:
     - name: name
       tier: core
-      providers: 18
-      share: 0.783
+      providers: 21
+      share: 0.913
       type: string
       spellings:
       - name
@@ -312,49 +325,63 @@ concepts:
       - label
       - property_name
       - title
+      - Name
       - propertyName
       - hotel_name
     - name: address
       tier: core
-      providers: 15
-      share: 0.652
+      providers: 16
+      share: 0.696
       type: object
       spellings:
       - address
       - location
+      - Address
     - name: id
       tier: core
-      providers: 12
-      share: 0.522
+      providers: 14
+      share: 0.609
       type: string
       spellings:
       - id
       - code
     - name: currency
-      tier: extended
-      providers: 11
-      share: 0.478
+      tier: core
+      providers: 12
+      share: 0.522
       type: string
       spellings:
       - currency
       - currency_code
       - currencyCode
+    - name: amenities
+      tier: extended
+      providers: 9
+      share: 0.391
+      type: array
+      spellings:
+      - amenities
+      - facilities
+      - Amenities
     - name: description
+      tier: extended
+      providers: 9
+      share: 0.391
+      type: string
+      spellings:
+      - description
+      - notes
+    - name: star_rating
       tier: extended
       providers: 8
       share: 0.348
       type: string
       spellings:
-      - description
-      - notes
-    - name: amenities
-      tier: extended
-      providers: 7
-      share: 0.304
-      type: array
-      spellings:
-      - amenities
-      - facilities
+      - starRating
+      - category
+      - stars
+      - rating
+      - StarRating
     - name: check_in
       tier: extended
       providers: 7
@@ -364,8 +391,8 @@ concepts:
       - checkin
       - start_date
       - check_in
-      - from
       - checkIn
+      - startDate
       - CheckIn
       - check_in_date
     - name: check_out
@@ -377,8 +404,8 @@ concepts:
       - checkout
       - end_date
       - check_out
-      - to
       - checkOut
+      - endDate
       - CheckOut
       - check_out_date
     - name: city
@@ -388,6 +415,14 @@ concepts:
       type: string
       spellings:
       - city
+    - name: time_zone
+      tier: extended
+      providers: 6
+      share: 0.261
+      type: string
+      spellings:
+      - timeZone
+      - timezone
     - name: hotel_id
       tier: extended
       providers: 5
@@ -398,6 +433,14 @@ concepts:
       - property_id
       - hotel_id
       - propertyId
+    - name: images
+      tier: extended
+      providers: 5
+      share: 0.217
+      type: array
+      spellings:
+      - images
+      - Images
     - name: latitude
       tier: extended
       providers: 5
@@ -420,66 +463,56 @@ concepts:
       spellings:
       - propertyType
       - property_type
-    - name: star_rating
+    - name: status
       tier: extended
       providers: 5
       share: 0.217
       type: string
       spellings:
-      - stars
-      - rating
-      - starRating
-      - category
-    - name: time_zone
-      tier: extended
-      providers: 5
-      share: 0.217
-      type: string
-      spellings:
-      - timezone
-      - timeZone
-    long_tail_count: 305
+      - status
+      - state
+    long_tail_count: 327
     long_tail_sample:
-    - images
-    - status
-    - updated_at
     - chain_code
-    - country
-    - created_at
-    - phone
-    - room_types
-    - accommodation_details
-    - chain_name
+    - updated_at
     - check_in_time
     - check_out_time
-    - country_code
+    - country
+    - created_at
     - hotel_code
+    - phone
+    - room_types
+    - rooms
+    - accommodation_details
+    - chain_name
+    - coordinates
+    - country_code
+    - emails
     - hotel_type
     - limit
     - metadata
+    - min_rate
     - number_of_rooms
     - offset
+    - physical_address
     - primary_language
+    - rate_plan_type
     - review
     - room_count
-    - rooms
     - target
-    - total_results
     - a_ri_enabled
+    - access_code
     - accommodation
     - accommodation_order_references
     - accommodation_type
+    - account_id
+    - account_type
     - active
     - active_date
     - active_records_only
     - add_on_license
-    - alternate
-    - alternate_hotels
-    - attractions
-    - audit_data
-    - availability
-    - available_rooms
-    - available_units
+    - additional_details
+    - adults
   room:
     segments_seen:
       rooms: 5
@@ -528,6 +561,7 @@ concepts:
       - id
       - roomId
       - code
+      - recordId
     - name: name
       tier: core
       providers: 5
@@ -560,14 +594,19 @@ concepts:
       type: integer
       spellings:
       - capacity
+      - occupancy
       - maxAdults
       - maxOccupancy
-    long_tail_count: 162
+    long_tail_count: 192
     long_tail_sample:
     - default_occupancy
     - rate_code
+    - room_category
+    - room_description
+    - room_name
     - room_type
     - smoking_preference
+    - status
     - type
     - accessible
     - action
@@ -575,7 +614,7 @@ concepts:
     - active
     - active_date
     - adult_capacity
-    - allocation_room_types
+    - allocation_grid_dates
     - alternate_channel_room_type
     - app_user_on_break
     - attendant
@@ -593,17 +632,13 @@ concepts:
     - bed_type_code
     - bedrooms
     - begin_date
-    - block_id
     - booking_channel_code
     - booking_channel_info
     - break_out_id
+    - building
     - channel_codes
     - channel_rate_codes
     - channel_room_mapping_details
-    - channel_room_type
-    - channel_room_type_order
-    - check_out
-    - class_of_service
   rate_plan:
     segments_seen:
       rates: 6
@@ -657,25 +692,18 @@ concepts:
       share: 0.556
       type: string
       spellings:
-      - currency
       - currencyCode
-    - name: id
+      - currency
+    - name: code
       tier: extended
       providers: 4
       share: 0.444
       type: string
       spellings:
-      - id
-      - ratePlanId
-    - name: name
-      tier: extended
-      providers: 4
-      share: 0.444
-      type: string
-      spellings:
-      - name
-      - title
-      - Name
+      - code
+      - rateCode
+      - ratePlanCode
+      - RatePlanCode
     - name: check_out
       tier: extended
       providers: 3
@@ -684,15 +712,6 @@ concepts:
       spellings:
       - endDate
       - checkout
-    - name: code
-      tier: extended
-      providers: 3
-      share: 0.333
-      type: string
-      spellings:
-      - code
-      - rateCode
-      - ratePlanCode
     - name: description
       tier: extended
       providers: 3
@@ -700,56 +719,71 @@ concepts:
       type: string
       spellings:
       - description
-    - name: hotel_code
+    - name: id
       tier: extended
       providers: 3
       share: 0.333
       type: string
       spellings:
-      - hotelCode
-      - HotelCode
-    long_tail_count: 135
+      - id
+      - ratePlanId
+    - name: name
+      tier: extended
+      providers: 3
+      share: 0.333
+      type: string
+      spellings:
+      - name
+      - title
+    - name: room_types
+      tier: extended
+      providers: 3
+      share: 0.333
+      type: array
+      spellings:
+      - roomTypes
+    long_tail_count: 185
     long_tail_sample:
     - cancellation_policy_id
     - check_in
+    - hotel_code
     - metadata
-    - room_types
+    - rate_plan_name
+    - refundable
     - access_exclusions
     - active
     - adjustments
     - advanced_daily_base
     - advanced_daily_rate
+    - allow_rate_update
+    - allow_rates_to_gds
+    - allow_restriction_update
     - approval_notes
     - auto_rate_settings
-    - avail_rate_plan_info_type
     - b_ar_rate
     - begin_date
     - block_id
-    - block_rate_plans
+    - block_rate_indicator
+    - booking_channel_code
+    - booking_channel_mappings
     - brand_code
+    - cancel_penalty
+    - carrier_info
     - casino_comp
     - chain_code
     - channel
     - channel_code
     - channel_codes
     - channel_rate_mappings
+    - channel_rate_plan_category
+    - channel_rate_plan_code
+    - channel_rate_plan_order
+    - channel_rate_plan_web_name
+    - checkin_allowed
+    - checkout_allowed
     - children_fee
     - city_name
     - classifications
-    - closed_to_arrival
-    - closed_to_departure
-    - complimentary
-    - components
-    - conditions
-    - controls
-    - country_code
-    - create_date_time
-    - creator_id
-    - daily
-    - daily_rates
-    - day_type
-    - day_use
-    - descriptions
   guest:
     segments_seen:
       guests: 4
@@ -798,7 +832,7 @@ concepts:
       type: number
       spellings:
       - id
-    long_tail_count: 141
+    long_tail_count: 161
     long_tail_sample:
     - addresses
     - created_at
@@ -812,13 +846,17 @@ concepts:
     - add_ons
     - allow_customer_program
     - allow_name_change
+    - arrival_detail
     - attendees
+    - authorization_status
+    - authorization_status_description
+    - auto_outage
     - baggage_allowance_used
     - baggage_allowance_weight
     - baggage_allowance_weight_type
     - baggage_group_number
     - bags
-    - boarded
+    - boarding_allowed
     - boarding_pass_detail
     - boarding_sequence
     - booking_fields_responses
@@ -829,17 +867,13 @@ concepts:
     - cancelled_by_email
     - check_in
     - check_out
+    - checkin_allowed
+    - checkin_override_allowed
+    - clearance_country
     - comments
     - contacts
     - created_utc
     - currency
-    - customer_number
-    - discount_code
-    - document_type_code
-    - duration
-    - email
-    - email_addresses
-    - emd_coupons
   flight:
     segments_seen:
       flights: 10
@@ -875,6 +909,21 @@ concepts:
       share: 0.071
       tier: long-tail
     properties:
+    - name: status
+      tier: core
+      providers: 7
+      share: 0.583
+      type: string
+      spellings:
+      - status
+    - name: flight_number
+      tier: core
+      providers: 6
+      share: 0.5
+      type: string
+      spellings:
+      - flight_number
+      - flightNumber
     - name: id
       tier: extended
       providers: 5
@@ -898,14 +947,20 @@ concepts:
       spellings:
       - price
       - total_amount
-    - name: flight_number
+    - name: type
+      tier: extended
+      providers: 4
+      share: 0.333
+      type: string
+      spellings:
+      - type
+    - name: destination
       tier: extended
       providers: 3
       share: 0.25
-      type: string
+      type: object
       spellings:
-      - flightNumber
-      - flight_number
+      - destination
     - name: itineraries
       tier: extended
       providers: 3
@@ -913,6 +968,13 @@ concepts:
       type: array
       spellings:
       - itineraries
+    - name: origin
+      tier: extended
+      providers: 3
+      share: 0.25
+      type: object
+      spellings:
+      - origin
     - name: segments
       tier: extended
       providers: 3
@@ -927,52 +989,45 @@ concepts:
       type: string
       spellings:
       - source
-    - name: status
-      tier: extended
-      providers: 3
-      share: 0.25
-      type: string
-      spellings:
-      - status
-    long_tail_count: 105
+    long_tail_count: 164
     long_tail_sample:
-    - arrivals
-    - arrives_at
-    - departs_at
-    - departures
-    - disable_pricing
-    - enroute
-    - instant_ticketing_required
-    - last_ticketing_date
-    - last_ticketing_date_time
-    - non_homogeneous
-    - num_pages
-    - number_of_bookable_seats
-    - one_way
-    - origin_destinations
-    - payment_card_required
-    - pricing_options
-    - scheduled
-    - scheduled_arrivals
-    - scheduled_departures
-    - search_criteria
-    - sources
-    - traveler_pricings
-    - travelers
-    - type
-    - validating_airline_codes
-    - aircraft_code
+    - actual_in
+    - actual_off
+    - actual_on
+    - actual_out
+    - actual_runway_off
+    - actual_runway_on
+    - aircraft_type
     - airline_iata
     - airline_icao
-    - alliance
     - alt
     - arr_iata
     - arr_icao
-    - arrival_airport_code
-    - arrival_day_offset
-    - baggage
-    - cabin_class
-    - carrier
-    - context
-    - country_code
-    - credentials
+    - arrival_delay
+    - arrivals
+    - arrives_at
+    - atc_ident
+    - baggage_claim
+    - blocked
+    - cancelled
+    - codeshares
+    - codeshares_iata
+    - dep_iata
+    - dep_icao
+    - departs_at
+    - departure_delay
+    - departures
+    - dir
+    - disable_pricing
+    - diverted
+    - enroute
+    - estimated_in
+    - estimated_off
+    - estimated_on
+    - estimated_out
+    - fa_flight_id
+    - filed_airspeed
+    - filed_altitude
+    - filed_ete
+    - flag
+    - flight_iata

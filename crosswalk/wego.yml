@@ -17,11 +17,12 @@ concepts:
     properties:
       name: name
       address: location
-      description: description
       amenities: amenities
+      description: description
       hotel_id: hotelId
+      images: images
       property_type: propertyType
-    core_coverage: 0.667
+    core_coverage: 0.5
     evidence:
     - openapi/_original/wego-api-openapi.json#GET /v1/hotels/{hotelId}
   rate_plan:
@@ -39,6 +40,6 @@ concepts:
     properties:
       flight_number: flightNumber
       segments: segments
-    core_coverage: 0.0
+    core_coverage: 0.5
     evidence:
     - openapi/_original/wego-api-openapi.json#GET /v1/flights/schedules

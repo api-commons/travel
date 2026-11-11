@@ -26,11 +26,11 @@ concepts:
     properties:
       name: name
       id: id
+      star_rating: starRating
       city: city
       latitude: latitude
       longitude: longitude
-      star_rating: starRating
-    core_coverage: 0.667
+    core_coverage: 0.5
     evidence:
     - openapi/_original/nuitee-openapi.yml#GET /data/hotel
     - openapi/_original/nuitee-openapi.yml#GET /data/hotels
@@ -41,6 +41,7 @@ concepts:
       hotel_id: hotelId
       currency: currency
       check_out: checkout
+      room_types: roomTypes
     core_coverage: 1.0
     evidence:
     - openapi/_original/nuitee-openapi.yml#POST /hotels/rates

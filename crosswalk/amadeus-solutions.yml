@@ -10,6 +10,7 @@ concepts:
       id: id
       currency: currencyCode
       price: price
+      type: type
       itineraries: itineraries
       source: source
     core_coverage: 0.0

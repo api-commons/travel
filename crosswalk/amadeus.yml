@@ -11,6 +11,7 @@ concepts:
       id: id
       currency: currencyCode
       price: price
+      type: type
       itineraries: itineraries
       segments: segments
       source: source

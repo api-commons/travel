@@ -19,13 +19,13 @@ concepts:
       address: location
       id: id
       amenities: amenities
-      check_in: checkin
-      check_out: checkout
-      property_type: property_type
       star_rating:
       - stars
       - rating
-    core_coverage: 1.0
+      check_in: checkin
+      check_out: checkout
+      property_type: property_type
+    core_coverage: 0.75
     evidence:
     - openapi/_original/despegar-geo-openapi.json#GET /content-api/hotels
     - openapi/_original/despegar-geo-openapi.json#GET /suggestions/hotels

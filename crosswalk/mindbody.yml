@@ -6,8 +6,9 @@ concepts:
   booking:
     path_segment:
     - reservation
-    properties: {}
-    core_coverage: 0.0
+    properties:
+      id: ReservationId
+    core_coverage: 0.5
     evidence:
     - openapi/_original/mindbody-public-api-v6-openapi-original.yml#DELETE /public/v6/pickaspot/v1/reservation/{pathInfo}
     - openapi/_original/mindbody-public-api-v6-openapi-original.yml#GET /public/v6/pickaspot/v1/reservation/{pathInfo}

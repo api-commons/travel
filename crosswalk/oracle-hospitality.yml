@@ -7,10 +7,15 @@ concepts:
     path_segment:
     - reservations
     properties:
-      status: reservationStatus
-      created_at: creationDate
+      id:
+      - id
+      - code
+      - recordId
+      status:
+      - reservationStatus
+      - status
       hotel_id: hotelId
-    core_coverage: 0.5
+    core_coverage: 1.0
     evidence:
     - openapi/_original/oracle-hospitality-distribution-v1-book.json#GET /hotels/{hotelCode}/reservations/{confirmationNum}
     - openapi/_original/oracle-hospitality-distribution-v1-book.json#POST /hotels/{hotelCode}/reservations
@@ -28,13 +33,15 @@ concepts:
       - location
       currency: currencyCode
       description: description
+      check_in: startDate
+      check_out: endDate
       city: city
+      time_zone: timeZone
       hotel_id: hotelId
       latitude: latitude
       longitude: longitude
       property_type: propertyType
-      time_zone: timeZone
-    core_coverage: 0.667
+    core_coverage: 0.75
     evidence:
     - openapi/_original/oracle-hospitality-distribution-v1-content.json#GET /hotels
     - openapi/_original/oracle-hospitality-distribution-v1-content.json#GET /hotels/{hotelCode}
@@ -48,12 +55,15 @@ concepts:
     - room
     properties:
       id:
-      - roomId
       - code
+      - recordId
+      - roomId
       name: name
       hotel_id: hotelId
       description: description
-      max_occupancy: maxAdults
+      max_occupancy:
+      - occupancy
+      - maxAdults
     core_coverage: 1.0
     evidence:
     - openapi/_original/oracle-hospitality-distribution-v1-content.json#GET /hotels/{hotelCode}/roomTypes
@@ -67,14 +77,16 @@ concepts:
     - rateplans
     properties:
       hotel_id: hotelId
-      name: name
-      check_out: endDate
+      currency: currencyCode
       code:
-      - code
       - ratePlanCode
+      - code
+      - rateCode
+      check_out: endDate
       description: description
-      hotel_code: hotelCode
-    core_coverage: 0.5
+      name: name
+      room_types: roomTypes
+    core_coverage: 1.0
     evidence:
     - openapi/_original/oracle-hospitality-distribution-outbound-aripublication.json#POST /rates
     - openapi/_original/oracle-hospitality-distribution-v1-content.json#GET /hotels/{hotelCode}/ratePlans

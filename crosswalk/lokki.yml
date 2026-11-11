@@ -6,8 +6,7 @@ concepts:
   booking:
     path_segment:
     - bookings
-    properties:
-      created_at: created
+    properties: {}
     core_coverage: 0.0
     evidence:
     - openapi/_original/lokki-dashboard-api-openapi.json#GET /v2/rental-place-user/bookings

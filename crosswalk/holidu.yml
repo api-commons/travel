@@ -20,10 +20,8 @@ concepts:
   rate_plan:
     path_segment:
     - rates
-    properties:
-      currency: currency
-      id: ratePlanId
-    core_coverage: 0.5
+    properties: {}
+    core_coverage: 0.0
     evidence:
     - openapi/_original/holidu-connectivity-api.json#GET /v2/rates
     - openapi/_original/holidu-connectivity-api.json#POST /v2/rates

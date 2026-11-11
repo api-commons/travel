@@ -19,17 +19,21 @@ concepts:
     path_segment:
     - hotels
     properties:
+      name: Name
+      address: Address
+      amenities: Amenities
+      star_rating: StarRating
       check_in: CheckIn
       check_out: CheckOut
-    core_coverage: 0.0
+      images: Images
+    core_coverage: 0.5
     evidence:
     - openapi/_original/sabre-hotels-openapi.yml#POST /v2.0.0/offers/hotels
   rate_plan:
     path_segment:
     - rates
     properties:
-      name: Name
-      hotel_code: HotelCode
+      code: RatePlanCode
     core_coverage: 0.0
     evidence:
     - openapi/_original/sabre-hotels-openapi.yml#GET /v2.0.0/offers/hotels/{hotelCode}/rates

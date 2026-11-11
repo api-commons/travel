@@ -14,8 +14,9 @@ concepts:
       status: status
       check_in: arrival
       check_out: departure
-      guest_ids: booker
-      hotel_id: property
+      hotel_id:
+      - propertyId
+      - property
     core_coverage: 1.0
     evidence:
     - openapi/_original/apaleo-openapi.yml#GET /booking/v1/bookings
@@ -35,6 +36,7 @@ concepts:
       currency: currencyCode
       description: description
       time_zone: timeZone
+      status: status
     core_coverage: 1.0
     evidence:
     - openapi/_original/apaleo-openapi.yml#GET /inventory/v1/properties
@@ -45,10 +47,10 @@ concepts:
     - rate-plans
     properties:
       hotel_id: propertyId
-      id: id
-      name: name
       code: code
       description: description
+      id: id
+      name: name
     core_coverage: 0.5
     evidence:
     - openapi/_original/apaleo-openapi.yml#GET /rateplan/v1/rate-plans

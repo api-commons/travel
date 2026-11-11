@@ -14,6 +14,7 @@ concepts:
       guest_ids: customer
       metadata: attributes
       currency: currency
+      description: notes
       hotel_id: property_id
     core_coverage: 1.0
     evidence:
@@ -31,10 +32,11 @@ concepts:
       currency: currency
       amenities: facilities
       city: city
+      time_zone: timezone
       latitude: latitude
       longitude: longitude
       property_type: property_type
-      time_zone: timezone
+      status: state
     core_coverage: 1.0
     evidence:
     - openapi/_original/channex-openapi.json#DELETE /groups/{id}/properties/{property_id}

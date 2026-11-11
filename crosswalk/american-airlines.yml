@@ -17,9 +17,11 @@ concepts:
     path_segment:
     - flights
     properties:
-      id: id
-      flight_number: flightNumber
       status: status
-    core_coverage: 0.0
+      flight_number: flightNumber
+      id: id
+      destination: destination
+      origin: origin
+    core_coverage: 1.0
     evidence:
     - openapi/_original/american-airlines-runway-developer-api-openapi.yml#GET /flights

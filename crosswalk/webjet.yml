@@ -21,7 +21,8 @@ concepts:
       currency: currency
       check_in: check_in_date
       check_out: check_out_date
-    core_coverage: 0.667
+      status: status
+    core_coverage: 0.75
     evidence:
     - openapi/_original/webjet-tripninja-hotels-openapi.yml#DELETE /price/hotels/{endpoint}/
     - openapi/_original/webjet-tripninja-hotels-openapi.yml#POST /details/hotels/{endpoint}/

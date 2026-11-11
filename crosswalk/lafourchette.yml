@@ -8,8 +8,8 @@ concepts:
     - reservations
     properties:
       status: status
-      created_at: createdAt
       guest_ids: customer
+      created_at: createdAt
       metadata: customFields
       updated_at: updatedAt
     core_coverage: 0.5

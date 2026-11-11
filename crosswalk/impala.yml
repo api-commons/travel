@@ -13,6 +13,7 @@ concepts:
       check_out: end
       created_at: createdAt
       updated_at: updatedAt
+      description: notes
       hotel_id: hotel
     core_coverage: 1.0
     evidence:
@@ -30,14 +31,15 @@ concepts:
       - address
       - location
       currency: currency
-      description: description
       amenities: amenities
+      description: description
+      star_rating: starRating
       check_in: checkIn
       check_out: checkOut
-      hotel_id: hotelId
-      star_rating: starRating
       time_zone: timezone
-    core_coverage: 0.667
+      hotel_id: hotelId
+      images: images
+    core_coverage: 0.75
     evidence:
     - openapi/_original/impala-hotels-openapi-original.json#GET /hotels
     - openapi/_original/impala-hotels-openapi-original.json#GET /hotels/{hotelId}
@@ -46,8 +48,9 @@ concepts:
     - rate-plans
     properties:
       hotel_id: hotelId
-      id: ratePlanId
       description: description
+      id: ratePlanId
+      room_types: roomTypes
     core_coverage: 0.5
     evidence:
     - openapi/_original/impala-hotels-openapi-original.json#GET /hotels/{hotelId}/rate-plans

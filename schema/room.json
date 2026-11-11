@@ -13,7 +13,8 @@
       "x-commons-spellings": [
         "id",
         "roomId",
-        "code"
+        "code",
+        "recordId"
       ]
     },
     "name": {
@@ -54,6 +55,7 @@
       "x-commons-providers": 3,
       "x-commons-spellings": [
         "capacity",
+        "occupancy",
         "maxAdults",
         "maxOccupancy"
       ]

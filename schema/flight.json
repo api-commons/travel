@@ -5,6 +5,25 @@
   "description": "The common flight in Travel and Lodging, distilled from 12 providers' own OpenAPI. Each property records the share of them that declare it.",
   "type": "object",
   "properties": {
+    "status": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.583,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "status"
+      ]
+    },
+    "flight_number": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.5,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "flight_number",
+        "flightNumber"
+      ]
+    },
     "id": {
       "type": "string",
       "x-commons-tier": "extended",
@@ -34,14 +53,22 @@
         "total_amount"
       ]
     },
-    "flight_number": {
+    "type": {
       "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.333,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "type"
+      ]
+    },
+    "destination": {
+      "type": "object",
       "x-commons-tier": "extended",
       "x-commons-share": 0.25,
       "x-commons-providers": 3,
       "x-commons-spellings": [
-        "flightNumber",
-        "flight_number"
+        "destination"
       ]
     },
     "itineraries": {
@@ -51,6 +78,15 @@
       "x-commons-providers": 3,
       "x-commons-spellings": [
         "itineraries"
+      ]
+    },
+    "origin": {
+      "type": "object",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.25,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "origin"
       ]
     },
     "segments": {
@@ -69,15 +105,6 @@
       "x-commons-providers": 3,
       "x-commons-spellings": [
         "source"
-      ]
-    },
-    "status": {
-      "type": "string",
-      "x-commons-tier": "extended",
-      "x-commons-share": 0.25,
-      "x-commons-providers": 3,
-      "x-commons-spellings": [
-        "status"
       ]
     }
   },

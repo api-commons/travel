@@ -12,6 +12,7 @@ concepts:
       check_in: arrival
       check_out: departure
       guest_ids: guest_id
+      description: notes
       hotel_id: property_id
       price: total_amount
     core_coverage: 1.0
@@ -27,7 +28,7 @@ concepts:
       name: name
       address: address
       id: id
-    core_coverage: 1.0
+    core_coverage: 0.75
     evidence:
     - openapi/_original/ownerrez-openapi.yml#GET /properties
     - openapi/_original/ownerrez-openapi.yml#GET /properties/{id}

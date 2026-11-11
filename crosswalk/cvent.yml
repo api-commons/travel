@@ -10,8 +10,8 @@ concepts:
       id: id
       check_in: startDate
       check_out: endDate
-      created_at: created
       guest_ids: guests
+      created_at: created
       metadata: customFields
       updated_at: lastModified
       hotel_id: hotel
@@ -33,9 +33,10 @@ concepts:
       - id
       - code
       currency: currencyCode
-      description: description
       amenities: amenities
+      description: description
       star_rating: rating
+      images: images
     core_coverage: 1.0
     evidence:
     - openapi/_original/cvent-openapi.json#GET /housing-events/{housingEventId}/hotels
@@ -63,9 +64,8 @@ concepts:
     - rates
     properties:
       currency: currencyCode
-      check_out: endDate
       code: rateCode
-      hotel_code: hotelCode
+      check_out: endDate
     core_coverage: 0.5
     evidence:
     - openapi/_original/cvent-openapi.json#PUT /housing-hotels/{hotelCode}/rooms/{roomCode}/rates

@@ -19,8 +19,14 @@ concepts:
     path_segment:
     - property
     - properties
-    properties: {}
-    core_coverage: 0.0
+    properties:
+      name: name
+      id: id
+      amenities: amenities
+      description: description
+      star_rating: starRating
+      time_zone: timeZone
+    core_coverage: 0.5
     evidence:
     - openapi/_original/hotel-engine-omni-partner-api-openapi.yml#GET /content/v1/property
     - openapi/_original/hotel-engine-omni-partner-api-openapi.yml#POST /content/v1/catalog/property

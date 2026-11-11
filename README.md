@@ -12,12 +12,12 @@ generated. Every number below is a count of providers.
 <!-- commons:summary -->
 | Concept | Expose it | Readable schema | Core properties (share) | Collection named |
 | --- | ---: | ---: | --- | --- |
-| booking | 60 | 57 | id 77%, status 70% | bookings 35, reservations 19, booking 7, trips 6 |
-| hotel | 24 | 23 | name 78%, address 65%, id 52% | hotels 12, properties 11, hotel 3, accommodations 2 |
+| booking | 60 | 57 | id 82%, status 72% | bookings 35, reservations 19, booking 7, trips 6 |
+| hotel | 24 | 23 | name 91%, address 70%, id 61%, currency 52% | hotels 12, properties 11, hotel 3, accommodations 2 |
 | room | 8 | 7 | id 71%, name 71%, hotel_id 57% | rooms 5, room 2, room_types 1, room-types 1 |
 | rate_plan | 9 | 9 | hotel_id 67%, currency 56% | rates 6, rate-plans 2, rate_plans 1, rateplans 1 |
 | guest | 6 | 5 | id 60% | guests 4, passengers 2, passenger 1 |
-| flight | 14 | 12 |  | flights 10, flight 2, flight-offers 2, schedules 2 |
+| flight | 14 | 12 | status 58%, flight_number 50% | flights 10, flight 2, flight-offers 2, schedules 2 |
 
 Cohort: 184 providers with harvested OpenAPI, 67 crosswalks. Of the providers exposing a booking: 72% create, 82% list, 78% fetch, 45% update, 28% delete. Generated 2026-11-10 by build.py.
 <!-- /commons:summary -->
@@ -29,7 +29,7 @@ extended tier and the long tail of every concept are in [profile.yml](profile.ym
 
 - A booking agrees only on id and status. Check-in, check-out and the guests sit at 37%: hotel stays, flights, tours and car rentals are all bookings with different shapes.
 - A hotel agrees on name, address and id; amenities and star rating are modelled by too few to share.
-- Flights agree on nothing, not even an id (42%): NDC-style offers, schedules and flight status are three different resources published under one word.
+- Flights agree on a flight number and a status, and little else: NDC-style offers, schedules and flight status are three different resources published under one word.
 - Guests and rooms are thin (5-7 providers): property-management systems and channel managers keep their APIs to partners.
 
 ## Artifacts

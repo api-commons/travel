@@ -22,29 +22,20 @@
       "x-commons-share": 0.556,
       "x-commons-providers": 5,
       "x-commons-spellings": [
-        "currency",
-        "currencyCode"
+        "currencyCode",
+        "currency"
       ]
     },
-    "id": {
+    "code": {
       "type": "string",
       "x-commons-tier": "extended",
       "x-commons-share": 0.444,
       "x-commons-providers": 4,
       "x-commons-spellings": [
-        "id",
-        "ratePlanId"
-      ]
-    },
-    "name": {
-      "type": "string",
-      "x-commons-tier": "extended",
-      "x-commons-share": 0.444,
-      "x-commons-providers": 4,
-      "x-commons-spellings": [
-        "name",
-        "title",
-        "Name"
+        "code",
+        "rateCode",
+        "ratePlanCode",
+        "RatePlanCode"
       ]
     },
     "check_out": {
@@ -57,17 +48,6 @@
         "checkout"
       ]
     },
-    "code": {
-      "type": "string",
-      "x-commons-tier": "extended",
-      "x-commons-share": 0.333,
-      "x-commons-providers": 3,
-      "x-commons-spellings": [
-        "code",
-        "rateCode",
-        "ratePlanCode"
-      ]
-    },
     "description": {
       "type": "string",
       "x-commons-tier": "extended",
@@ -77,14 +57,33 @@
         "description"
       ]
     },
-    "hotel_code": {
+    "id": {
       "type": "string",
       "x-commons-tier": "extended",
       "x-commons-share": 0.333,
       "x-commons-providers": 3,
       "x-commons-spellings": [
-        "hotelCode",
-        "HotelCode"
+        "id",
+        "ratePlanId"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.333,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "name",
+        "title"
+      ]
+    },
+    "room_types": {
+      "type": "array",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.333,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "roomTypes"
       ]
     }
   },

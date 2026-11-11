@@ -8,7 +8,9 @@ concepts:
     - bookings
     - booking
     properties:
-      status: bookingStatus
+      status:
+      - status
+      - bookingStatus
       currency: currencyCode
     core_coverage: 0.5
     evidence:
@@ -29,7 +31,7 @@ concepts:
       - id
       - code
       amenities: facilities
-    core_coverage: 0.667
+    core_coverage: 0.5
     evidence:
     - openapi/_original/tui-group-tui-meta-partner-package-live-search-openapi.yml#GET /{market}/packages/{agent}/accommodations
     - openapi/_original/tui-group-tui-newskies-digital-api-openapi.yml#DELETE /api/nsk/v1/trip/{legKey}/seats/{unitKey}/properties
