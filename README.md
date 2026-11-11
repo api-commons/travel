@@ -19,7 +19,7 @@ generated. Every number below is a count of providers.
 | guest | 6 | 5 | id 60% | guests 4, passengers 2, passenger 1 |
 | flight | 14 | 12 | status 58%, flight_number 50% | flights 10, flight 2, flight-offers 2, schedules 2 |
 
-Cohort: 184 providers with harvested OpenAPI, 67 crosswalks. Of the providers exposing a booking: 72% create, 82% list, 78% fetch, 45% update, 28% delete. Generated 2026-11-10 by build.py.
+Cohort: 184 providers with harvested OpenAPI, 67 crosswalks. Of the providers exposing a booking: 72% create, 82% list, 78% fetch, 45% update, 28% delete. Generated 2026-11-11 by build.py.
 <!-- /commons:summary -->
 
 Shares are of the providers with a readable resource schema for that concept. The
