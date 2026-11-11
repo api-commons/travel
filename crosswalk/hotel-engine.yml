@@ -1,0 +1,27 @@
+provider: hotel-engine
+apis_io: https://apis.io/providers/hotel-engine/
+context: travel
+generated: '2026-11-10'
+concepts:
+  booking:
+    path_segment:
+    - booking
+    properties:
+      id: bookingId
+      status: status
+      guest_ids: guests
+      metadata: metadata
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/hotel-engine-omni-partner-api-openapi.yml#POST /book/v1/lodging/booking
+    - openapi/_original/hotel-engine-omni-partner-api-openapi.yml#PUT /book/v1/lodging/booking
+  hotel:
+    path_segment:
+    - property
+    - properties
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/hotel-engine-omni-partner-api-openapi.yml#GET /content/v1/property
+    - openapi/_original/hotel-engine-omni-partner-api-openapi.yml#POST /content/v1/catalog/property
+    - openapi/_original/hotel-engine-omni-partner-api-openapi.yml#POST /content/v1/properties

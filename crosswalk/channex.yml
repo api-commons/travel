@@ -1,0 +1,74 @@
+provider: channex
+apis_io: https://apis.io/providers/channex/
+context: travel
+generated: '2026-11-10'
+concepts:
+  booking:
+    path_segment:
+    - bookings
+    properties:
+      id: id
+      status: status
+      check_in: arrival_date
+      check_out: departure_date
+      guest_ids: customer
+      metadata: attributes
+      currency: currency
+      hotel_id: property_id
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/channex-openapi.json#GET /bookings
+    - openapi/_original/channex-openapi.json#GET /bookings/{id}
+    - openapi/_original/channex-openapi.json#POST /bookings
+    - openapi/_original/channex-openapi.json#PUT /bookings/{id}
+  hotel:
+    path_segment:
+    - properties
+    properties:
+      name: title
+      address: address
+      id: id
+      currency: currency
+      amenities: facilities
+      city: city
+      latitude: latitude
+      longitude: longitude
+      property_type: property_type
+      time_zone: timezone
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/channex-openapi.json#DELETE /groups/{id}/properties/{property_id}
+    - openapi/_original/channex-openapi.json#DELETE /properties/{id}
+    - openapi/_original/channex-openapi.json#GET /properties
+    - openapi/_original/channex-openapi.json#GET /properties/{id}
+    - openapi/_original/channex-openapi.json#POST /groups/{id}/properties/{property_id}
+  room:
+    path_segment:
+    - room_types
+    properties:
+      id: id
+      name: title
+      hotel_id: property_id
+      max_occupancy: capacity
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/channex-openapi.json#DELETE /room_types/{id}
+    - openapi/_original/channex-openapi.json#GET /room_types
+    - openapi/_original/channex-openapi.json#GET /room_types/{id}
+    - openapi/_original/channex-openapi.json#POST /room_types
+    - openapi/_original/channex-openapi.json#PUT /room_types/{id}
+  rate_plan:
+    path_segment:
+    - rate_plans
+    properties:
+      hotel_id: property_id
+      currency: currency
+      id: id
+      name: title
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/channex-openapi.json#DELETE /rate_plans/{id}
+    - openapi/_original/channex-openapi.json#GET /rate_plans
+    - openapi/_original/channex-openapi.json#GET /rate_plans/{id}
+    - openapi/_original/channex-openapi.json#POST /rate_plans
+    - openapi/_original/channex-openapi.json#PUT /rate_plans/{id}

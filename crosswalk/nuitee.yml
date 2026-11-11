@@ -1,0 +1,46 @@
+provider: nuitee
+apis_io: https://apis.io/providers/nuitee/
+context: travel
+generated: '2026-11-10'
+concepts:
+  booking:
+    path_segment:
+    - bookings
+    properties:
+      id: bookingId
+      status: status
+      check_in: checkin
+      check_out: checkout
+      currency: currency
+      price: price
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/nuitee-openapi.yml#GET /bookings
+    - openapi/_original/nuitee-openapi.yml#GET /bookings/{bookingId}
+    - openapi/_original/nuitee-openapi.yml#GET /guests/{guestId}/bookings
+    - openapi/_original/nuitee-openapi.yml#PUT /bookings/{bookingId}
+  hotel:
+    path_segment:
+    - hotels
+    - hotel
+    properties:
+      name: name
+      id: id
+      city: city
+      latitude: latitude
+      longitude: longitude
+      star_rating: starRating
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/nuitee-openapi.yml#GET /data/hotel
+    - openapi/_original/nuitee-openapi.yml#GET /data/hotels
+  rate_plan:
+    path_segment:
+    - rates
+    properties:
+      hotel_id: hotelId
+      currency: currency
+      check_out: checkout
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/nuitee-openapi.yml#POST /hotels/rates

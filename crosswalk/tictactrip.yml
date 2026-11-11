@@ -1,0 +1,17 @@
+provider: tictactrip
+apis_io: https://apis.io/providers/tictactrip/
+context: travel
+generated: '2026-11-10'
+concepts:
+  booking:
+    path_segment:
+    - orders
+    properties:
+      id: id
+      guest_ids: customer
+      price: totalPrice
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/tictactrip-openapi-original.json#GET /booking/v3/orders
+    - openapi/_original/tictactrip-openapi-original.json#GET /booking/v3/orders/{orderId}
+    - openapi/_original/tictactrip-openapi-original.json#POST /booking/v3/orders

@@ -1,0 +1,22 @@
+provider: united-airlines
+apis_io: https://apis.io/providers/united-airlines/
+context: travel
+generated: '2026-11-10'
+concepts:
+  booking:
+    path_segment:
+    - bookings
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/united-airlines-ndc-openapi.yml#DELETE /bookings/{bookingId}
+    - openapi/_original/united-airlines-ndc-openapi.yml#GET /bookings
+    - openapi/_original/united-airlines-ndc-openapi.yml#GET /bookings/{bookingId}
+    - openapi/_original/united-airlines-ndc-openapi.yml#POST /bookings
+  flight:
+    path_segment:
+    - schedules
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/united-airlines-ndc-openapi.yml#GET /flights/schedules

@@ -1,0 +1,18 @@
+provider: amadeus-solutions
+apis_io: https://apis.io/providers/amadeus-solutions/
+context: travel
+generated: '2026-11-10'
+concepts:
+  flight:
+    path_segment:
+    - flight-offers
+    properties:
+      id: id
+      currency: currencyCode
+      price: price
+      itineraries: itineraries
+      source: source
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/amadeus-solutions-flight-offers-search-openapi.yaml#GET /shopping/flight-offers
+    - openapi/_original/amadeus-solutions-flight-offers-search-openapi.yaml#POST /shopping/flight-offers

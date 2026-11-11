@@ -1,0 +1,73 @@
+provider: booking-com
+apis_io: https://apis.io/providers/booking-com/
+context: travel
+generated: '2026-11-10'
+concepts:
+  booking:
+    path_segment:
+    - reservations
+    properties:
+      id: reservation_id
+      hotel_id: property_id
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/booking-com-payments-api-openapi.yml#GET /connectivity-payments/reservations/{reservation-id}
+  hotel:
+    path_segment:
+    - properties
+    - accommodations
+    - hotels
+    properties:
+      name:
+      - name
+      - label
+      - property_name
+      address: location
+      id: id
+      currency:
+      - currency
+      - currency_code
+      description: description
+      check_in:
+      - checkin
+      - check_in
+      check_out:
+      - checkout
+      - check_out
+      hotel_id:
+      - property_id
+      - hotel_id
+      star_rating:
+      - category
+      - stars
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/booking-com-connect-api-openapi.yml#GET /demand-api-v2-compatible/hotels
+    - openapi/_original/booking-com-connect-api-openapi.yml#POST /inventory/properties
+    - openapi/_original/booking-com-demand-api-3-1-openapi.yml#POST /orders/details/accommodations
+    - openapi/_original/booking-com-demand-api-3-2-beta-openapi.yml#POST /orders/details/accommodations
+    - openapi/_original/booking-com-demand-api-3-2-openapi.yml#POST /orders/details/accommodations
+  room:
+    path_segment:
+    - rooms
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/booking-com-facilities-api-openapi.yml#GET /facilities-api/properties/{propertyId}/rooms/{roomId}
+    - openapi/_original/booking-com-facilities-api-openapi.yml#PUT /facilities-api/properties/{propertyId}/rooms/{roomId}
+    - openapi/_original/booking-com-facilities-api-remote-sync-openapi.yml#GET /properties/{propertyId}/rooms/{roomId}
+    - openapi/_original/booking-com-facilities-api-remote-sync-openapi.yml#PUT /properties/{propertyId}/rooms/{roomId}
+  flight:
+    path_segment:
+    - flights
+    properties:
+      id: id
+      currency: currency
+      price: price
+      itineraries: itineraries
+      status: status
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/booking-com-demand-api-3-1-openapi.yml#POST /orders/details/flights
+    - openapi/_original/booking-com-demand-api-3-2-beta-openapi.yml#POST /orders/details/flights
+    - openapi/_original/booking-com-demand-api-3-2-openapi.yml#POST /orders/details/flights

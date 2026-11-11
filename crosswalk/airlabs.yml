@@ -1,0 +1,14 @@
+provider: airlabs
+apis_io: https://apis.io/providers/airlabs/
+context: travel
+generated: '2026-11-10'
+concepts:
+  flight:
+    path_segment:
+    - flights
+    - flight
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/openapi.yaml#GET /flight
+    - openapi/_original/openapi.yaml#GET /flights

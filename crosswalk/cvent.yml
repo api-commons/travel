@@ -1,0 +1,74 @@
+provider: cvent
+apis_io: https://apis.io/providers/cvent/
+context: travel
+generated: '2026-11-10'
+concepts:
+  booking:
+    path_segment:
+    - reservations
+    properties:
+      id: id
+      check_in: startDate
+      check_out: endDate
+      created_at: created
+      guest_ids: guests
+      metadata: customFields
+      updated_at: lastModified
+      hotel_id: hotel
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/cvent-openapi.json#DELETE /reservation-requests/{reservationRequestsId}/reservations/{reservationId}
+    - openapi/_original/cvent-openapi.json#DELETE /reservations/{reservationId}
+    - openapi/_original/cvent-openapi.json#GET /housing-events/{housingEventId}/reservations
+    - openapi/_original/cvent-openapi.json#GET /reservations/{reservationId}
+    - openapi/_original/cvent-openapi.json#POST /reservation-requests/{reservationRequestsId}/reservations/{reservationId}
+  hotel:
+    path_segment:
+    - hotels
+    - properties
+    properties:
+      name: name
+      address: address
+      id:
+      - id
+      - code
+      currency: currencyCode
+      description: description
+      amenities: amenities
+      star_rating: rating
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/cvent-openapi.json#GET /housing-events/{housingEventId}/hotels
+    - openapi/_original/cvent-openapi.json#GET /housing-events/{housingEventId}/hotels/{hotelId}
+    - openapi/_original/cvent-openapi.json#GET /travel-suppliers/properties
+    - openapi/_original/cvent-openapi.json#GET /travel-suppliers/properties/{propertyId}
+    - openapi/_original/cvent-public-spec-openapi.yaml#GET /housing-events/{housingEventId}/hotels
+  room:
+    path_segment:
+    - room-types
+    properties:
+      id: id
+      name: name
+      hotel_id: hotel
+      description: description
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/cvent-openapi.json#GET /housing-events/{housingEventId}/hotels/{hotelId}/room-types
+    - openapi/_original/cvent-openapi.json#GET /housing-events/{housingEventId}/hotels/{hotelId}/room-types/{roomTypeId}
+    - openapi/_original/cvent-public-spec-openapi.yaml#GET /housing-events/{housingEventId}/hotels/{hotelId}/room-types
+    - openapi/_original/cvent-public-spec-openapi.yaml#GET /housing-events/{housingEventId}/hotels/{hotelId}/room-types/{roomTypeId}
+    - openapi/_original/cvent-hospitality-cloud-housing-openapi.yml#GET /housing-events/{housingEventId}/hotels/{hotelId}/room-types
+  rate_plan:
+    path_segment:
+    - rates
+    properties:
+      currency: currencyCode
+      check_out: endDate
+      code: rateCode
+      hotel_code: hotelCode
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/cvent-openapi.json#PUT /housing-hotels/{hotelCode}/rooms/{roomCode}/rates
+    - openapi/_original/cvent-public-spec-openapi.yaml#PUT /housing-hotels/{hotelCode}/rooms/{roomCode}/rates
+    - openapi/_original/cvent-hospitality-cloud-housing-hotels-openapi.yml#PUT /housing-hotels/{hotelCode}/rooms/{roomCode}/rates
+    - openapi/_original/cvent-hospitality-cloud-rest-apis-openapi.json#PUT /housing-hotels/{hotelCode}/rooms/{roomCode}/rates

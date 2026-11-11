@@ -1,0 +1,20 @@
+provider: lafourchette
+apis_io: https://apis.io/providers/lafourchette/
+context: travel
+generated: '2026-11-10'
+concepts:
+  booking:
+    path_segment:
+    - reservations
+    properties:
+      status: status
+      created_at: createdAt
+      guest_ids: customer
+      metadata: customFields
+      updated_at: updatedAt
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/lafourchette-b2b-api-openapi.yml#GET /v1/reservations
+    - openapi/_original/lafourchette-b2b-api-openapi.yml#GET /v1/reservations/{id}
+    - openapi/_original/lafourchette-b2b-api-openapi.yml#PATCH /v1/reservations/{id}
+    - openapi/_original/lafourchette-b2b-api-openapi.yml#POST /v1/restaurants/{id}/reservations

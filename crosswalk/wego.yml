@@ -1,0 +1,44 @@
+provider: wego
+apis_io: https://apis.io/providers/wego/
+context: travel
+generated: '2026-11-10'
+concepts:
+  booking:
+    path_segment:
+    - trips
+    properties:
+      metadata: metadata
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/wego-api-openapi.json#GET /v1/flights/trips/{tripId}
+  hotel:
+    path_segment:
+    - hotels
+    properties:
+      name: name
+      address: location
+      description: description
+      amenities: amenities
+      hotel_id: hotelId
+      property_type: propertyType
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/wego-api-openapi.json#GET /v1/hotels/{hotelId}
+  rate_plan:
+    path_segment:
+    - rates
+    properties:
+      hotel_id: hotelId
+      currency: currencyCode
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/wego-api-openapi.json#GET /v1/hotels/{hotelId}/rates
+  flight:
+    path_segment:
+    - schedules
+    properties:
+      flight_number: flightNumber
+      segments: segments
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/wego-api-openapi.json#GET /v1/flights/schedules

@@ -1,0 +1,392 @@
+context: travel
+generated: '2026-11-10'
+adopters:
+- provider: agl
+  apis_io: https://apis.io/providers/agl/
+  crosswalk: crosswalk/agl.yml
+  concepts:
+  - booking
+- provider: airbnb
+  apis_io: https://apis.io/providers/airbnb/
+  crosswalk: crosswalk/airbnb.yml
+  concepts:
+  - booking
+- provider: airlabs
+  apis_io: https://apis.io/providers/airlabs/
+  crosswalk: crosswalk/airlabs.yml
+  concepts:
+  - flight
+- provider: aloft
+  apis_io: https://apis.io/providers/aloft/
+  crosswalk: crosswalk/aloft.yml
+  concepts:
+  - flight
+- provider: amadeus
+  apis_io: https://apis.io/providers/amadeus/
+  crosswalk: crosswalk/amadeus.yml
+  concepts:
+  - flight
+- provider: amadeus-solutions
+  apis_io: https://apis.io/providers/amadeus-solutions/
+  crosswalk: crosswalk/amadeus-solutions.yml
+  concepts:
+  - flight
+- provider: american-airlines
+  apis_io: https://apis.io/providers/american-airlines/
+  crosswalk: crosswalk/american-airlines.yml
+  concepts:
+  - booking
+  - flight
+- provider: amex-gbt
+  apis_io: https://apis.io/providers/amex-gbt/
+  crosswalk: crosswalk/amex-gbt.yml
+  concepts:
+  - booking
+  - hotel
+- provider: apaleo
+  apis_io: https://apis.io/providers/apaleo/
+  crosswalk: crosswalk/apaleo.yml
+  concepts:
+  - booking
+  - hotel
+  - rate_plan
+- provider: beds24
+  apis_io: https://apis.io/providers/beds24/
+  crosswalk: crosswalk/beds24.yml
+  concepts:
+  - booking
+  - hotel
+- provider: beyond-pricing
+  apis_io: https://apis.io/providers/beyond-pricing/
+  crosswalk: crosswalk/beyond-pricing.yml
+  concepts:
+  - booking
+- provider: booking-com
+  apis_io: https://apis.io/providers/booking-com/
+  crosswalk: crosswalk/booking-com.yml
+  concepts:
+  - booking
+  - flight
+  - hotel
+  - room
+- provider: bookit-n-go
+  apis_io: https://apis.io/providers/bookit-n-go/
+  crosswalk: crosswalk/bookit-n-go.yml
+  concepts:
+  - booking
+  - flight
+  - hotel
+- provider: cal-com
+  apis_io: https://apis.io/providers/cal-com/
+  crosswalk: crosswalk/cal-com.yml
+  concepts:
+  - booking
+  - guest
+- provider: channex
+  apis_io: https://apis.io/providers/channex/
+  crosswalk: crosswalk/channex.yml
+  concepts:
+  - booking
+  - hotel
+  - rate_plan
+  - room
+- provider: cobot
+  apis_io: https://apis.io/providers/cobot/
+  crosswalk: crosswalk/cobot.yml
+  concepts:
+  - booking
+- provider: cvent
+  apis_io: https://apis.io/providers/cvent/
+  crosswalk: crosswalk/cvent.yml
+  concepts:
+  - booking
+  - hotel
+  - rate_plan
+  - room
+- provider: despegar
+  apis_io: https://apis.io/providers/despegar/
+  crosswalk: crosswalk/despegar.yml
+  concepts:
+  - booking
+  - hotel
+- provider: duffel
+  apis_io: https://apis.io/providers/duffel/
+  crosswalk: crosswalk/duffel.yml
+  concepts:
+  - booking
+  - flight
+  - guest
+- provider: e2open
+  apis_io: https://apis.io/providers/e2open/
+  crosswalk: crosswalk/e2open.yml
+  concepts:
+  - booking
+- provider: eat-app
+  apis_io: https://apis.io/providers/eat-app/
+  crosswalk: crosswalk/eat-app.yml
+  concepts:
+  - booking
+  - guest
+- provider: fareharbor
+  apis_io: https://apis.io/providers/fareharbor/
+  crosswalk: crosswalk/fareharbor.yml
+  concepts:
+  - booking
+  - hotel
+- provider: flightaware
+  apis_io: https://apis.io/providers/flightaware/
+  crosswalk: crosswalk/flightaware.yml
+  concepts:
+  - flight
+- provider: flightlabs
+  apis_io: https://apis.io/providers/flightlabs/
+  crosswalk: crosswalk/flightlabs.yml
+  concepts:
+  - flight
+- provider: guestready
+  apis_io: https://apis.io/providers/guestready/
+  crosswalk: crosswalk/guestready.yml
+  concepts:
+  - booking
+- provider: holidu
+  apis_io: https://apis.io/providers/holidu/
+  crosswalk: crosswalk/holidu.yml
+  concepts:
+  - booking
+  - rate_plan
+- provider: hospitable
+  apis_io: https://apis.io/providers/hospitable/
+  crosswalk: crosswalk/hospitable.yml
+  concepts:
+  - booking
+  - hotel
+- provider: hotel-engine
+  apis_io: https://apis.io/providers/hotel-engine/
+  crosswalk: crosswalk/hotel-engine.yml
+  concepts:
+  - booking
+  - hotel
+- provider: hotelbeds
+  apis_io: https://apis.io/providers/hotelbeds/
+  crosswalk: crosswalk/hotelbeds.yml
+  concepts:
+  - booking
+  - hotel
+- provider: hotelrunner
+  apis_io: https://apis.io/providers/hotelrunner/
+  crosswalk: crosswalk/hotelrunner.yml
+  concepts:
+  - booking
+  - room
+- provider: impala
+  apis_io: https://apis.io/providers/impala/
+  crosswalk: crosswalk/impala.yml
+  concepts:
+  - booking
+  - hotel
+  - rate_plan
+- provider: klook
+  apis_io: https://apis.io/providers/klook/
+  crosswalk: crosswalk/klook.yml
+  concepts:
+  - booking
+- provider: lafourchette
+  apis_io: https://apis.io/providers/lafourchette/
+  crosswalk: crosswalk/lafourchette.yml
+  concepts:
+  - booking
+- provider: launch27
+  apis_io: https://apis.io/providers/launch27/
+  crosswalk: crosswalk/launch27.yml
+  concepts:
+  - booking
+- provider: lodgify
+  apis_io: https://apis.io/providers/lodgify/
+  crosswalk: crosswalk/lodgify.yml
+  concepts:
+  - booking
+  - hotel
+  - room
+- provider: lokki
+  apis_io: https://apis.io/providers/lokki/
+  crosswalk: crosswalk/lokki.yml
+  concepts:
+  - booking
+- provider: marubox
+  apis_io: https://apis.io/providers/marubox/
+  crosswalk: crosswalk/marubox.yml
+  concepts:
+  - booking
+- provider: mindbody
+  apis_io: https://apis.io/providers/mindbody/
+  crosswalk: crosswalk/mindbody.yml
+  concepts:
+  - booking
+- provider: momence
+  apis_io: https://apis.io/providers/momence/
+  crosswalk: crosswalk/momence.yml
+  concepts:
+  - booking
+- provider: nuitee
+  apis_io: https://apis.io/providers/nuitee/
+  crosswalk: crosswalk/nuitee.yml
+  concepts:
+  - booking
+  - hotel
+  - rate_plan
+- provider: octo
+  apis_io: https://apis.io/providers/octo/
+  crosswalk: crosswalk/octo.yml
+  concepts:
+  - booking
+- provider: oracle-hospitality
+  apis_io: https://apis.io/providers/oracle-hospitality/
+  crosswalk: crosswalk/oracle-hospitality.yml
+  concepts:
+  - booking
+  - guest
+  - hotel
+  - rate_plan
+  - room
+- provider: outdoorsy
+  apis_io: https://apis.io/providers/outdoorsy/
+  crosswalk: crosswalk/outdoorsy.yml
+  concepts:
+  - booking
+- provider: ownerrez
+  apis_io: https://apis.io/providers/ownerrez/
+  crosswalk: crosswalk/ownerrez.yml
+  concepts:
+  - booking
+  - guest
+  - hotel
+- provider: parkwhiz
+  apis_io: https://apis.io/providers/parkwhiz/
+  crosswalk: crosswalk/parkwhiz.yml
+  concepts:
+  - booking
+- provider: perk
+  apis_io: https://apis.io/providers/perk/
+  crosswalk: crosswalk/perk.yml
+  concepts:
+  - booking
+- provider: quandoo
+  apis_io: https://apis.io/providers/quandoo/
+  crosswalk: crosswalk/quandoo.yml
+  concepts:
+  - booking
+- provider: rockwell-collins
+  apis_io: https://apis.io/providers/rockwell-collins/
+  crosswalk: crosswalk/rockwell-collins.yml
+  concepts:
+  - flight
+- provider: sabre
+  apis_io: https://apis.io/providers/sabre/
+  crosswalk: crosswalk/sabre.yml
+  concepts:
+  - booking
+  - hotel
+  - rate_plan
+- provider: spotnana
+  apis_io: https://apis.io/providers/spotnana/
+  crosswalk: crosswalk/spotnana.yml
+  concepts:
+  - booking
+- provider: square
+  apis_io: https://apis.io/providers/square/
+  crosswalk: crosswalk/square.yml
+  concepts:
+  - booking
+- provider: tablecheck
+  apis_io: https://apis.io/providers/tablecheck/
+  crosswalk: crosswalk/tablecheck.yml
+  concepts:
+  - booking
+- provider: thefork
+  apis_io: https://apis.io/providers/thefork/
+  crosswalk: crosswalk/thefork.yml
+  concepts:
+  - booking
+- provider: tictactrip
+  apis_io: https://apis.io/providers/tictactrip/
+  crosswalk: crosswalk/tictactrip.yml
+  concepts:
+  - booking
+- provider: tourradar
+  apis_io: https://apis.io/providers/tourradar/
+  crosswalk: crosswalk/tourradar.yml
+  concepts:
+  - booking
+- provider: travel-risk-api
+  apis_io: https://apis.io/providers/travel-risk-api/
+  crosswalk: crosswalk/travel-risk-api.yml
+  concepts:
+  - booking
+- provider: traveloka
+  apis_io: https://apis.io/providers/traveloka/
+  crosswalk: crosswalk/traveloka.yml
+  concepts:
+  - booking
+  - hotel
+  - room
+- provider: travelperk
+  apis_io: https://apis.io/providers/travelperk/
+  crosswalk: crosswalk/travelperk.yml
+  concepts:
+  - booking
+- provider: travelport
+  apis_io: https://apis.io/providers/travelport/
+  crosswalk: crosswalk/travelport.yml
+  concepts:
+  - booking
+- provider: tui-group
+  apis_io: https://apis.io/providers/tui-group/
+  crosswalk: crosswalk/tui-group.yml
+  concepts:
+  - booking
+  - guest
+  - hotel
+- provider: united-airlines
+  apis_io: https://apis.io/providers/united-airlines/
+  crosswalk: crosswalk/united-airlines.yml
+  concepts:
+  - booking
+  - flight
+- provider: viator
+  apis_io: https://apis.io/providers/viator/
+  crosswalk: crosswalk/viator.yml
+  concepts:
+  - booking
+  - hotel
+- provider: webjet
+  apis_io: https://apis.io/providers/webjet/
+  crosswalk: crosswalk/webjet.yml
+  concepts:
+  - booking
+  - flight
+  - hotel
+- provider: wego
+  apis_io: https://apis.io/providers/wego/
+  crosswalk: crosswalk/wego.yml
+  concepts:
+  - booking
+  - flight
+  - hotel
+  - rate_plan
+- provider: withlocals
+  apis_io: https://apis.io/providers/withlocals/
+  crosswalk: crosswalk/withlocals.yml
+  concepts:
+  - booking
+- provider: znanylekarz
+  apis_io: https://apis.io/providers/znanylekarz/
+  crosswalk: crosswalk/znanylekarz.yml
+  concepts:
+  - booking
+- provider: zoca
+  apis_io: https://apis.io/providers/zoca/
+  crosswalk: crosswalk/zoca.yml
+  concepts:
+  - booking
+  - hotel
+  - room

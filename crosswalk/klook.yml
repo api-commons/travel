@@ -1,0 +1,19 @@
+provider: klook
+apis_io: https://apis.io/providers/klook/
+context: travel
+generated: '2026-11-10'
+concepts:
+  booking:
+    path_segment:
+    - bookings
+    properties:
+      id:
+      - id
+      - uuid
+      status: status
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/klook-octo-openapi-original.json#GET /bookings
+    - openapi/_original/klook-octo-openapi-original.json#GET /bookings/{uuid}
+    - openapi/_original/klook-octo-openapi-original.json#PATCH /bookings/{uuid}
+    - openapi/_original/klook-octo-openapi-original.json#POST /bookings

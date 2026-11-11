@@ -1,0 +1,21 @@
+provider: marubox
+apis_io: https://apis.io/providers/marubox/
+context: travel
+generated: '2026-11-10'
+concepts:
+  booking:
+    path_segment:
+    - bookings
+    properties:
+      id: id
+      status: status
+      check_in: start
+      check_out: end
+      created_at: createdAt
+      guest_ids: booker
+      updated_at: updatedAt
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/marubox-openapi.json#GET /bookings
+    - openapi/_original/marubox-openapi.json#GET /bookings/{id}
+    - openapi/_original/marubox-openapi.json#POST /bookings

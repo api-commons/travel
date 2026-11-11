@@ -1,0 +1,16 @@
+provider: rockwell-collins
+apis_io: https://apis.io/providers/rockwell-collins/
+context: travel
+generated: '2026-11-10'
+concepts:
+  flight:
+    path_segment:
+    - flights
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/flightaware-aeroapi-openapi.yml#GET /airports/{id}/flights
+    - openapi/_original/flightaware-aeroapi-openapi.yml#GET /flights/{ident}
+    - openapi/_original/flightaware-aeroapi-openapi.yml#GET /foresight/flights/{ident}
+    - openapi/_original/flightaware-aeroapi-openapi.yml#GET /history/flights/{ident}
+    - openapi/_original/flightaware-aeroapi-openapi.yml#GET /operators/{id}/flights

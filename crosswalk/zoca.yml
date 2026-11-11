@@ -1,0 +1,36 @@
+provider: zoca
+apis_io: https://apis.io/providers/zoca/
+context: travel
+generated: '2026-11-10'
+concepts:
+  booking:
+    path_segment:
+    - booking
+    - bookings
+    properties:
+      id: id
+      created_at: createdAt
+      metadata: metadata
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/zoca-platform-openapi.yml#DELETE /scheduling/policies/booking/{id}
+    - openapi/_original/zoca-platform-openapi.yml#GET /frontdesk/bookings/{entityId}
+    - openapi/_original/zoca-platform-openapi.yml#GET /scheduling/bookings
+    - openapi/_original/zoca-platform-openapi.yml#GET /scheduling/bookings/{id}
+    - openapi/_original/zoca-platform-openapi.yml#GET /scheduling/checkout/booking/{bookingId}
+  hotel:
+    path_segment:
+    - properties
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/zoca-tasks-openapi.yml#GET /tasks/api/v1/hubspot/properties
+    - openapi/_original/zoca-tasks-swagger.json#GET /tasks/api/v1/hubspot/properties
+  room:
+    path_segment:
+    - rooms
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/zoca-platform-openapi.yml#GET /socket-debug/rooms
+    - openapi/_original/zoca-platform-swagger.json#GET /socket-debug/rooms

@@ -1,0 +1,20 @@
+provider: e2open
+apis_io: https://apis.io/providers/e2open/
+context: travel
+generated: '2026-11-10'
+concepts:
+  booking:
+    path_segment:
+    - bookings
+    - booking
+    properties:
+      id: bookingId
+      status: status
+      guest_ids: booker
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/inttra-ocean-execution-openapi.yml#GET /bookings
+    - openapi/_original/inttra-ocean-execution-openapi.yml#GET /bookings/{bookingId}
+    - openapi/_original/inttra-ocean-execution-openapi.yml#GET /tracking/booking/{bookingId}
+    - openapi/_original/inttra-ocean-execution-openapi.yml#POST /bookings
+    - openapi/_original/inttra-ocean-execution-openapi.yml#PUT /bookings/{bookingId}

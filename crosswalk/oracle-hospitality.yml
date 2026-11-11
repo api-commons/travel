@@ -1,0 +1,91 @@
+provider: oracle-hospitality
+apis_io: https://apis.io/providers/oracle-hospitality/
+context: travel
+generated: '2026-11-10'
+concepts:
+  booking:
+    path_segment:
+    - reservations
+    properties:
+      status: reservationStatus
+      created_at: creationDate
+      hotel_id: hotelId
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/oracle-hospitality-distribution-v1-book.json#GET /hotels/{hotelCode}/reservations/{confirmationNum}
+    - openapi/_original/oracle-hospitality-distribution-v1-book.json#POST /hotels/{hotelCode}/reservations
+    - openapi/_original/oracle-hospitality-distribution-v1-book.json#PUT /hotels/{hotelCode}/reservations/{confirmationNum}
+    - openapi/_original/oracle-hospitality-distribution-v1-distribution.json#GET /hotels/{hotelId}/reservations/{reservationId}
+    - openapi/_original/oracle-hospitality-distribution-v1-distribution.json#POST /hotels/{hotelId}/reservations
+  hotel:
+    path_segment:
+    - hotels
+    - property
+    properties:
+      name: hotelName
+      address:
+      - address
+      - location
+      currency: currencyCode
+      description: description
+      city: city
+      hotel_id: hotelId
+      latitude: latitude
+      longitude: longitude
+      property_type: propertyType
+      time_zone: timeZone
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/oracle-hospitality-distribution-v1-content.json#GET /hotels
+    - openapi/_original/oracle-hospitality-distribution-v1-content.json#GET /hotels/{hotelCode}
+    - openapi/_original/oracle-hospitality-distribution-v1-shop.json#GET /hotels
+    - openapi/_original/oracle-hospitality-property-v1-chl.json#DELETE /channels/hotels
+    - openapi/_original/oracle-hospitality-property-v1-chl.json#GET /channels/{channelCode}/hotels
+  room:
+    path_segment:
+    - rooms
+    - roomtypes
+    - room
+    properties:
+      id:
+      - roomId
+      - code
+      name: name
+      hotel_id: hotelId
+      description: description
+      max_occupancy: maxAdults
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/oracle-hospitality-distribution-v1-content.json#GET /hotels/{hotelCode}/roomTypes
+    - openapi/_original/oracle-hospitality-property-v1-blk.json#GET /blocks/{blockId}/roomTypes
+    - openapi/_original/oracle-hospitality-property-v1-blk.json#PUT /hotels/{hotelId}/externalSystems/{externalSystemCode}/blocks/{blockExternalId}/allocation/roomTypes/{roomType}
+    - openapi/_original/oracle-hospitality-property-v1-chl.json#DELETE /channels/roomTypes
+    - openapi/_original/oracle-hospitality-property-v1-chl.json#DELETE /hotels/{hotelId}/channels/{channelCode}/rooms/{roomTypeCode}
+  rate_plan:
+    path_segment:
+    - rates
+    - rateplans
+    properties:
+      hotel_id: hotelId
+      name: name
+      check_out: endDate
+      code:
+      - code
+      - ratePlanCode
+      description: description
+      hotel_code: hotelCode
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/oracle-hospitality-distribution-outbound-aripublication.json#POST /rates
+    - openapi/_original/oracle-hospitality-distribution-v1-content.json#GET /hotels/{hotelCode}/ratePlans
+    - openapi/_original/oracle-hospitality-property-v1-blk.json#PUT /blocks/{blockId}/rates
+    - openapi/_original/oracle-hospitality-property-v1-chl.json#DELETE /channels/rates
+    - openapi/_original/oracle-hospitality-property-v1-chl.json#GET /channels/rates
+  guest:
+    path_segment:
+    - guests
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/oracle-hospitality-property-v1-crm.json#GET /guests/{guestId}
+    - openapi/_original/oracle-hospitality-property-v1-crm.json#POST /guests

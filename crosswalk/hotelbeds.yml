@@ -1,0 +1,27 @@
+provider: hotelbeds
+apis_io: https://apis.io/providers/hotelbeds/
+context: travel
+generated: '2026-11-10'
+concepts:
+  booking:
+    path_segment:
+    - bookings
+    properties:
+      status: status
+      currency: currency
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/hotelbeds-openapi.yml#DELETE /hotel-api/1.0/bookings/{bookingId}
+    - openapi/_original/hotelbeds-openapi.yml#GET /hotel-api/1.0/bookings
+    - openapi/_original/hotelbeds-openapi.yml#GET /hotel-api/1.0/bookings/{bookingId}
+    - openapi/_original/hotelbeds-openapi.yml#POST /hotel-api/1.0/bookings
+  hotel:
+    path_segment:
+    - hotels
+    properties:
+      check_in: from
+      check_out: to
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/hotelbeds-openapi.yml#GET /hotel-content-api/1.0/hotels
+    - openapi/_original/hotelbeds-openapi.yml#POST /hotel-api/1.0/hotels

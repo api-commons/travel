@@ -1,0 +1,21 @@
+provider: tourradar
+apis_io: https://apis.io/providers/tourradar/
+context: travel
+generated: '2026-11-10'
+concepts:
+  booking:
+    path_segment:
+    - bookings
+    properties:
+      id: id
+      status: status
+      check_out: departure_date
+      created_at: created_at
+      currency: currency
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/tourradar-openapi.yml#GET /v1/bookings
+    - openapi/_original/tourradar-openapi.yml#GET /v1/bookings/{bookingId}
+    - openapi/_original/tourradar-openapi.yml#POST /v1/bookings
+    - openapi/_original/tourradar-partner-api-openapi.json#GET /v1/bookings
+    - openapi/_original/tourradar-partner-api-openapi.json#GET /v1/bookings/{bookingId}

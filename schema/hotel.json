@@ -1,0 +1,187 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/travel/main/schema/hotel.json",
+  "title": "Hotel",
+  "description": "The common hotel in Travel and Lodging, distilled from 23 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.783,
+      "x-commons-providers": 18,
+      "x-commons-spellings": [
+        "name",
+        "hotelName",
+        "label",
+        "property_name",
+        "title",
+        "propertyName",
+        "hotel_name"
+      ]
+    },
+    "address": {
+      "type": "object",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.652,
+      "x-commons-providers": 15,
+      "x-commons-spellings": [
+        "address",
+        "location"
+      ]
+    },
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.522,
+      "x-commons-providers": 12,
+      "x-commons-spellings": [
+        "id",
+        "code"
+      ]
+    },
+    "currency": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.478,
+      "x-commons-providers": 11,
+      "x-commons-spellings": [
+        "currency",
+        "currency_code",
+        "currencyCode"
+      ]
+    },
+    "description": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.348,
+      "x-commons-providers": 8,
+      "x-commons-spellings": [
+        "description",
+        "notes"
+      ]
+    },
+    "amenities": {
+      "type": "array",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.304,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "amenities",
+        "facilities"
+      ]
+    },
+    "check_in": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.304,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "checkin",
+        "start_date",
+        "check_in",
+        "from",
+        "checkIn",
+        "CheckIn",
+        "check_in_date"
+      ]
+    },
+    "check_out": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.304,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "checkout",
+        "end_date",
+        "check_out",
+        "to",
+        "checkOut",
+        "CheckOut",
+        "check_out_date"
+      ]
+    },
+    "city": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.261,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "city"
+      ]
+    },
+    "hotel_id": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.217,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "hotelId",
+        "property_id",
+        "hotel_id",
+        "propertyId"
+      ]
+    },
+    "latitude": {
+      "type": "number",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.217,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "latitude"
+      ]
+    },
+    "longitude": {
+      "type": "number",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.217,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "longitude"
+      ]
+    },
+    "property_type": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.217,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "propertyType",
+        "property_type"
+      ]
+    },
+    "star_rating": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.217,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "stars",
+        "rating",
+        "starRating",
+        "category"
+      ]
+    },
+    "time_zone": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.217,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "timezone",
+        "timeZone"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "travel",
+    "concept": "hotel",
+    "providers": 23,
+    "generated": "2026-11-10",
+    "version": "0.1.0-draft.20261110",
+    "status": "draft"
+  }
+}

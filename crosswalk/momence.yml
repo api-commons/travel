@@ -1,0 +1,18 @@
+provider: momence
+apis_io: https://apis.io/providers/momence/
+context: travel
+generated: '2026-11-10'
+concepts:
+  booking:
+    path_segment:
+    - bookings
+    - reservations
+    properties:
+      id: id
+      created_at: createdAt
+      currency: currency
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/momence-openapi.yml#GET /api/v2/host/appointments/reservations
+    - openapi/_original/momence-openapi.yml#GET /api/v2/host/sessions/{sessionId}/bookings
+    - openapi/_original/momence-openapi.yml#POST /api/v2/host/sessions/{sessionId}/waitlist/bookings

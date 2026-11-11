@@ -1,0 +1,471 @@
+openapi: 3.1.0
+info:
+  title: Travel and Lodging (API Commons)
+  version: 0.1.0-draft.20261110
+  description: 'The common Travel and Lodging interface, distilled from the harvested OpenAPI of 184 providers in
+    the APIs.io catalog. Not a product: no one serves this API. It is the shape the market already shares, measured,
+    so that providers, agents and integrators can map to one vocabulary. See profile.yml.'
+  license:
+    name: CC BY-NC-SA 4.0
+    url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+paths:
+  /bookings:
+    get:
+      operationId: listBookings
+      summary: List bookings
+      tags:
+      - Bookings
+      x-commons-tier: core
+      x-commons-share: 0.817
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id001
+                  $ref: '#/components/schemas/Booking'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createBooking
+      summary: Create a booking
+      tags:
+      - Bookings
+      x-commons-tier: core
+      x-commons-share: 0.717
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+  /bookings/{booking_id}:
+    parameters:
+    - $ref: '#/components/parameters/booking_id'
+    get:
+      operationId: getBooking
+      summary: Get a booking
+      tags:
+      - Bookings
+      x-commons-tier: core
+      x-commons-share: 0.783
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+    patch:
+      operationId: updateBooking
+      summary: Update a booking
+      tags:
+      - Bookings
+      x-commons-tier: extended
+      x-commons-share: 0.45
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+    delete:
+      operationId: deleteBooking
+      summary: Delete a booking
+      tags:
+      - Bookings
+      x-commons-tier: extended
+      x-commons-share: 0.283
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+  /hotels:
+    get:
+      operationId: listHotels
+      summary: List hotels
+      tags:
+      - Hotels
+      x-commons-tier: core
+      x-commons-share: 0.792
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id002
+                  $ref: '#/components/schemas/Hotel'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createHotel
+      summary: Create a hotel
+      tags:
+      - Hotels
+      x-commons-tier: extended
+      x-commons-share: 0.458
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id002
+  /hotels/{hotel_id}:
+    parameters:
+    - $ref: '#/components/parameters/hotel_id'
+    get:
+      operationId: getHotel
+      summary: Get a hotel
+      tags:
+      - Hotels
+      x-commons-tier: extended
+      x-commons-share: 0.458
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+  /rooms:
+    get:
+      operationId: listRooms
+      summary: List rooms
+      tags:
+      - Rooms
+      x-commons-tier: core
+      x-commons-share: 0.875
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id003
+                  $ref: '#/components/schemas/Room'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+  /rooms/{room_id}:
+    parameters:
+    - $ref: '#/components/parameters/room_id'
+    get:
+      operationId: getRoom
+      summary: Get a room
+      tags:
+      - Rooms
+      x-commons-tier: core
+      x-commons-share: 0.5
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+    patch:
+      operationId: updateRoom
+      summary: Update a room
+      tags:
+      - Rooms
+      x-commons-tier: extended
+      x-commons-share: 0.375
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id003
+  /rate-plans:
+    get:
+      operationId: listRatePlans
+      summary: List rate plans
+      tags:
+      - Rate Plans
+      x-commons-tier: core
+      x-commons-share: 0.778
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id004
+                  $ref: '#/components/schemas/RatePlan'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createRatePlan
+      summary: Create a rate plan
+      tags:
+      - Rate Plans
+      x-commons-tier: core
+      x-commons-share: 0.556
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id004
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id004
+  /rate-plans/{rate_plan_id}:
+    parameters:
+    - $ref: '#/components/parameters/rate_plan_id'
+    get:
+      operationId: getRatePlan
+      summary: Get a rate plan
+      tags:
+      - Rate Plans
+      x-commons-tier: extended
+      x-commons-share: 0.444
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id004
+  /guests/{guest_id}:
+    parameters:
+    - $ref: '#/components/parameters/guest_id'
+    get:
+      operationId: getGuest
+      summary: Get a guest
+      tags:
+      - Guests
+      x-commons-tier: core
+      x-commons-share: 0.667
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: &id005
+                $ref: '#/components/schemas/Guest'
+    patch:
+      operationId: updateGuest
+      summary: Update a guest
+      tags:
+      - Guests
+      x-commons-tier: core
+      x-commons-share: 0.5
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id005
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id005
+  /guests:
+    post:
+      operationId: createGuest
+      summary: Create a guest
+      tags:
+      - Guests
+      x-commons-tier: core
+      x-commons-share: 0.667
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id005
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id005
+    get:
+      operationId: listGuests
+      summary: List guests
+      tags:
+      - Guests
+      x-commons-tier: core
+      x-commons-share: 0.5
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: *id005
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+  /flights:
+    get:
+      operationId: listFlights
+      summary: List flights
+      tags:
+      - Flights
+      x-commons-tier: core
+      x-commons-share: 0.786
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id006
+                  $ref: '#/components/schemas/Flight'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createFlight
+      summary: Create a flight
+      tags:
+      - Flights
+      x-commons-tier: extended
+      x-commons-share: 0.357
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id006
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id006
+  /flights/{flight_id}:
+    parameters:
+    - $ref: '#/components/parameters/flight_id'
+    get:
+      operationId: getFlight
+      summary: Get a flight
+      tags:
+      - Flights
+      x-commons-tier: extended
+      x-commons-share: 0.286
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id006
+components:
+  schemas:
+    Booking:
+      $ref: ./schema/booking.json
+    Hotel:
+      $ref: ./schema/hotel.json
+    Room:
+      $ref: ./schema/room.json
+    RatePlan:
+      $ref: ./schema/rate_plan.json
+    Guest:
+      $ref: ./schema/guest.json
+    Flight:
+      $ref: ./schema/flight.json
+  parameters:
+    booking_id:
+      name: booking_id
+      in: path
+      required: true
+      schema:
+        type: string
+    hotel_id:
+      name: hotel_id
+      in: path
+      required: true
+      schema:
+        type: string
+    room_id:
+      name: room_id
+      in: path
+      required: true
+      schema:
+        type: string
+    rate_plan_id:
+      name: rate_plan_id
+      in: path
+      required: true
+      schema:
+        type: string
+    guest_id:
+      name: guest_id
+      in: path
+      required: true
+      schema:
+        type: string
+    flight_id:
+      name: flight_id
+      in: path
+      required: true
+      schema:
+        type: string

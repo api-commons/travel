@@ -1,0 +1,29 @@
+provider: holidu
+apis_io: https://apis.io/providers/holidu/
+context: travel
+generated: '2026-11-10'
+concepts:
+  booking:
+    path_segment:
+    - bookings
+    properties:
+      check_in: arrival
+      check_out: departure
+      guest_ids:
+      - guests
+      - customer
+      metadata: metaData
+      price: totalPrice
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/holidu-connectivity-api.json#PUT /v2/bookings
+  rate_plan:
+    path_segment:
+    - rates
+    properties:
+      currency: currency
+      id: ratePlanId
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/holidu-connectivity-api.json#GET /v2/rates
+    - openapi/_original/holidu-connectivity-api.json#POST /v2/rates

@@ -1,0 +1,60 @@
+aid: common-travel
+name: Travel and Lodging
+type: Common
+description: 'The common Travel and Lodging vocabulary, distilled from the harvested OpenAPI of 184 providers in
+  APIs.io: shared operations, JSON Schema per concept with measured adoption, and a crosswalk from the common names
+  to each provider''s own.'
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+- Application Programming Interface
+- API
+- Travel
+- Hospitality
+- Booking
+- Hotels
+- Common Schema
+created: '2026-11-10'
+modified: '2026-11-10'
+url: https://raw.githubusercontent.com/api-commons/travel/main/apis.yml
+specificationVersion: '0.20'
+apis:
+- aid: common-travel:travel
+  name: Common Travel and Lodging Interface
+  description: The Travel and Lodging interface the market already shares, measured.
+  humanURL: https://github.com/api-commons/travel
+  tags:
+  - Travel
+  - Hospitality
+  properties:
+  - type: OpenAPI
+    url: https://raw.githubusercontent.com/api-commons/travel/main/openapi.yml
+  - type: Profile
+    url: https://raw.githubusercontent.com/api-commons/travel/main/profile.yml
+  - type: Adopters
+    url: https://raw.githubusercontent.com/api-commons/travel/main/adopters.yml
+  - type: Rules
+    url: https://raw.githubusercontent.com/api-commons/schema-commons/main/ruleset/schema-commons-naming.yaml
+  - type: JSONSchema
+    name: booking
+    url: https://raw.githubusercontent.com/api-commons/travel/main/schema/booking.json
+  - type: JSONSchema
+    name: hotel
+    url: https://raw.githubusercontent.com/api-commons/travel/main/schema/hotel.json
+  - type: JSONSchema
+    name: room
+    url: https://raw.githubusercontent.com/api-commons/travel/main/schema/room.json
+  - type: JSONSchema
+    name: rate_plan
+    url: https://raw.githubusercontent.com/api-commons/travel/main/schema/rate_plan.json
+  - type: JSONSchema
+    name: guest
+    url: https://raw.githubusercontent.com/api-commons/travel/main/schema/guest.json
+  - type: JSONSchema
+    name: flight
+    url: https://raw.githubusercontent.com/api-commons/travel/main/schema/flight.json
+common:
+- type: License
+  url: https://raw.githubusercontent.com/api-commons/travel/main/LICENSE
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

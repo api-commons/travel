@@ -1,0 +1,21 @@
+provider: amadeus
+apis_io: https://apis.io/providers/amadeus/
+context: travel
+generated: '2026-11-10'
+concepts:
+  flight:
+    path_segment:
+    - flight-offers
+    - flights
+    properties:
+      id: id
+      currency: currencyCode
+      price: price
+      itineraries: itineraries
+      segments: segments
+      source: source
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/amadeus-flight-offers-search-openapi.yml#GET /shopping/flight-offers
+    - openapi/_original/amadeus-flight-offers-search-openapi.yml#POST /shopping/flight-offers
+    - openapi/_original/amadeus-on-demand-flight-status-openapi.yml#GET /schedule/flights

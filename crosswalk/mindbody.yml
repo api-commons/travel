@@ -1,0 +1,15 @@
+provider: mindbody
+apis_io: https://apis.io/providers/mindbody/
+context: travel
+generated: '2026-11-10'
+concepts:
+  booking:
+    path_segment:
+    - reservation
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/mindbody-public-api-v6-openapi-original.yml#DELETE /public/v6/pickaspot/v1/reservation/{pathInfo}
+    - openapi/_original/mindbody-public-api-v6-openapi-original.yml#GET /public/v6/pickaspot/v1/reservation/{pathInfo}
+    - openapi/_original/mindbody-public-api-v6-openapi-original.yml#POST /public/v6/pickaspot/v1/reservation/{pathInfo}
+    - openapi/_original/mindbody-public-api-v6-openapi-original.yml#PUT /public/v6/pickaspot/v1/reservation/{pathInfo}

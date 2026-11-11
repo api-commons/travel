@@ -1,0 +1,18 @@
+provider: cobot
+apis_io: https://apis.io/providers/cobot/
+context: travel
+generated: '2026-11-10'
+concepts:
+  booking:
+    path_segment:
+    - bookings
+    properties:
+      id: id
+      metadata: attributes
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/cobot-api2-openapi.yml#DELETE /bookings/{id}
+    - openapi/_original/cobot-api2-openapi.yml#GET /bookings/{id}
+    - openapi/_original/cobot-api2-openapi.yml#GET /memberships/{membershipId}/bookings
+    - openapi/_original/cobot-api2-openapi.yml#GET /spaces/{spaceId}/bookings
+    - openapi/_original/cobot-api2-openapi.yml#PATCH /bookings/{id}

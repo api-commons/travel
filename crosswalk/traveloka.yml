@@ -1,0 +1,39 @@
+provider: traveloka
+apis_io: https://apis.io/providers/traveloka/
+context: travel
+generated: '2026-11-10'
+concepts:
+  booking:
+    path_segment:
+    - bookings
+    properties:
+      id: bookingId
+      status: bookingStatus
+      check_in: checkInDate
+      check_out: checkOutDate
+      hotel_id: propertyId
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/traveloka-loka-api-v2.json#GET /bookings
+    - openapi/_original/traveloka-loka-partner-api-openapi.yml#GET /bookings
+  hotel:
+    path_segment:
+    - hotel
+    properties:
+      name: propertyName
+      hotel_id: propertyId
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/traveloka-loka-api-v2.json#GET /properties/content/hotel
+    - openapi/_original/traveloka-loka-partner-api-openapi.yml#GET /properties/content/hotel
+  room:
+    path_segment:
+    - room
+    properties:
+      id: roomId
+      hotel_id: propertyId
+      max_occupancy: maxOccupancy
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/traveloka-loka-api-v2.json#GET /properties/content/room
+    - openapi/_original/traveloka-loka-partner-api-openapi.yml#GET /properties/content/room

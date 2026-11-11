@@ -1,0 +1,1680 @@
+[
+ {
+  "slug": "2ndkitchen",
+  "specs": [
+   "openapi/_original/2ndkitchen-authservice.yaml",
+   "openapi/_original/2ndkitchen-businessservice.yaml",
+   "openapi/_original/2ndkitchen-deliveryservice.yaml",
+   "openapi/_original/2ndkitchen-indexingservice.yaml",
+   "openapi/_original/2ndkitchen-orderservice.yaml",
+   "openapi/_original/2ndkitchen-paymentservice.yaml",
+   "openapi/_original/2ndkitchen-pricingservice.yaml",
+   "openapi/_original/2ndkitchen-restaurantservice.yaml",
+   "openapi/_original/2ndkitchen-userservice.yaml"
+  ]
+ },
+ {
+  "slug": "acuity-scheduling",
+  "specs": [
+   "openapi/_original/acuity-scheduling-openapi.yml"
+  ]
+ },
+ {
+  "slug": "adsbexchange",
+  "specs": [
+   "openapi/_original/openapi.json"
+  ]
+ },
+ {
+  "slug": "aerodatabox",
+  "specs": [
+   "openapi/_original/aerodatabox-openapi.yml"
+  ]
+ },
+ {
+  "slug": "agendapro",
+  "specs": [
+   "openapi/_original/agendapro-connect-v3-openapi.yml",
+   "openapi/_original/platform-connect-v3.json"
+  ]
+ },
+ {
+  "slug": "agl",
+  "specs": [
+   "openapi/_original/agl-open-openapi-original.yml",
+   "openapi/_original/agl-ota-openapi-original.yml",
+   "openapi/_original/agl-tripcom-outbound-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "airalo",
+  "specs": [
+   "openapi/_original/airalo-partner-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "airbnb",
+  "specs": [
+   "openapi/_original/airbnb-activities-api-openapi.yml",
+   "openapi/_original/airbnb-homes-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "airbus",
+  "specs": [
+   "openapi/_original/airbus-openapi.yml"
+  ]
+ },
+ {
+  "slug": "airdna",
+  "specs": [
+   "openapi/_original/airdna-openapi.yml"
+  ]
+ },
+ {
+  "slug": "airlabs",
+  "specs": [
+   "openapi/_original/openapi.yaml"
+  ]
+ },
+ {
+  "slug": "airport-gap",
+  "specs": [
+   "openapi/_original/openapi.yml"
+  ]
+ },
+ {
+  "slug": "aloft",
+  "specs": [
+   "openapi/_original/aloft-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "amadeus",
+  "specs": [
+   "openapi/_original/amadeus-airline-code-lookup-openapi.yml",
+   "openapi/_original/amadeus-airline-routes-openapi.yml",
+   "openapi/_original/amadeus-airport-city-search-openapi.yml",
+   "openapi/_original/amadeus-airport-nearest-relevant-openapi.yml",
+   "openapi/_original/amadeus-airport-on-time-performance-openapi.yml",
+   "openapi/_original/amadeus-airport-routes-openapi.yml",
+   "openapi/_original/amadeus-authorization-openapi.yml",
+   "openapi/_original/amadeus-branded-fares-upsell-openapi.yml",
+   "openapi/_original/amadeus-city-search-openapi.yml",
+   "openapi/_original/amadeus-flight-availabilities-search-openapi.yml",
+   "openapi/_original/amadeus-flight-busiest-traveling-period-openapi.yml",
+   "openapi/_original/amadeus-flight-cheapest-date-search-openapi.yml",
+   "openapi/_original/amadeus-flight-checkin-links-openapi.yml",
+   "openapi/_original/amadeus-flight-choice-prediction-openapi.yml",
+   "openapi/_original/amadeus-flight-create-orders-openapi.yml",
+   "openapi/_original/amadeus-flight-delay-prediction-openapi.yml",
+   "openapi/_original/amadeus-flight-inspiration-search-openapi.yml",
+   "openapi/_original/amadeus-flight-most-booked-destinations-openapi.yml",
+   "openapi/_original/amadeus-flight-most-traveled-destinations-openapi.yml",
+   "openapi/_original/amadeus-flight-offers-price-openapi.yml",
+   "openapi/_original/amadeus-flight-offers-search-openapi.yml",
+   "openapi/_original/amadeus-flight-order-management-openapi.yml",
+   "openapi/_original/amadeus-flight-price-analysis-openapi.yml",
+   "openapi/_original/amadeus-hotel-booking-openapi.yml",
+   "openapi/_original/amadeus-hotel-booking-v1-openapi.yml",
+   "openapi/_original/amadeus-hotel-list-openapi.yml",
+   "openapi/_original/amadeus-hotel-name-autocomplete-openapi.yml",
+   "openapi/_original/amadeus-hotel-ratings-openapi.yml",
+   "openapi/_original/amadeus-hotel-search-openapi.yml",
+   "openapi/_original/amadeus-location-score-openapi.yml",
+   "openapi/_original/amadeus-on-demand-flight-status-openapi.yml",
+   "openapi/_original/amadeus-points-of-interest-openapi.yml",
+   "openapi/_original/amadeus-safe-place-openapi.yml",
+   "openapi/_original/amadeus-seatmap-display-openapi.yml",
+   "openapi/_original/amadeus-tours-and-activities-openapi.yml",
+   "openapi/_original/amadeus-transfer-book-openapi.yml",
+   "openapi/_original/amadeus-transfer-management-openapi.yml",
+   "openapi/_original/amadeus-transfer-search-openapi.yml",
+   "openapi/_original/amadeus-travel-recommendations-openapi.yml",
+   "openapi/_original/amadeus-trip-purpose-prediction-openapi.yml"
+  ]
+ },
+ {
+  "slug": "amadeus-media",
+  "specs": [
+   "openapi/_original/amadeus-media-hotel-list-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "amadeus-reservations",
+  "specs": [
+   "openapi/_original/amadeus-reservations-flight-create-orders-openapi.yaml",
+   "openapi/_original/amadeus-reservations-flight-order-management-openapi.yaml",
+   "openapi/_original/amadeus-reservations-hotel-booking-openapi.yaml",
+   "openapi/_original/amadeus-reservations-transfer-booking-openapi.yaml",
+   "openapi/_original/amadeus-reservations-transfer-management-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "amadeus-solutions",
+  "specs": [
+   "openapi/_original/amadeus-solutions-branded-fares-upsell-openapi.yaml",
+   "openapi/_original/amadeus-solutions-flight-offers-price-openapi.yaml",
+   "openapi/_original/amadeus-solutions-flight-offers-search-openapi.yaml",
+   "openapi/_original/amadeus-solutions-seat-map-display-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "amadeus-traveler-media",
+  "specs": [
+   "openapi/_original/amadeus-traveler-media-hotel-ratings-openapi.yaml",
+   "openapi/_original/amadeus-traveler-media-location-score-openapi.yaml",
+   "openapi/_original/amadeus-traveler-media-points-of-interest-openapi.yaml",
+   "openapi/_original/amadeus-traveler-media-travel-recommendations-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "american-airlines",
+  "specs": [
+   "openapi/_original/american-airlines-runway-developer-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "amex-gbt",
+  "specs": [
+   "openapi/_original/amex-gbt-approval-customisation-spi-openapi.json",
+   "openapi/_original/amex-gbt-approval-workflow-api-openapi.json",
+   "openapi/_original/amex-gbt-booking-api-openapi.json",
+   "openapi/_original/amex-gbt-cancellation-deletion-api-openapi.json",
+   "openapi/_original/amex-gbt-company-cdf-api-openapi.json",
+   "openapi/_original/amex-gbt-company-info-api-openapi.json",
+   "openapi/_original/amex-gbt-duty-of-care-api-openapi.json",
+   "openapi/_original/amex-gbt-expense-spi-openapi.json",
+   "openapi/_original/amex-gbt-receipt-api-openapi.json",
+   "openapi/_original/amex-gbt-reporting-api-openapi.json",
+   "openapi/_original/amex-gbt-service-bi-openapi.json",
+   "openapi/_original/amex-gbt-service-company-openapi.json",
+   "openapi/_original/amex-gbt-service-dutyofcare-openapi.json",
+   "openapi/_original/amex-gbt-service-openconnect-openapi.json",
+   "openapi/_original/amex-gbt-sso-context-api-openapi.json",
+   "openapi/_original/amex-gbt-user-sync-api-openapi.json",
+   "openapi/_original/amex-gbt-validation-spi-openapi.json"
+  ]
+ },
+ {
+  "slug": "apaleo",
+  "specs": [
+   "openapi/_original/apaleo-openapi.yml"
+  ]
+ },
+ {
+  "slug": "aramark",
+  "specs": [
+   "openapi/_original/aramark-alerts-openapi.json",
+   "openapi/_original/aramark-alerts.json",
+   "openapi/_original/aramark-ask-marko-openapi.json",
+   "openapi/_original/aramark-ask-marko.json",
+   "openapi/_original/aramark-business-unit-core-details-openapi.json",
+   "openapi/_original/aramark-business-unit-core-details.json",
+   "openapi/_original/aramark-calendar-openapi.json",
+   "openapi/_original/aramark-calendar.json",
+   "openapi/_original/aramark-catering-openapi.json",
+   "openapi/_original/aramark-catering.json",
+   "openapi/_original/aramark-daily-food-waste-tracking-openapi.json",
+   "openapi/_original/aramark-daily-food-waste-tracking.json",
+   "openapi/_original/aramark-district-core-details-openapi.json",
+   "openapi/_original/aramark-district-core-details.json",
+   "openapi/_original/aramark-division-core-details-openapi.json",
+   "openapi/_original/aramark-division-core-details.json",
+   "openapi/_original/aramark-financial-daily-account-summary-openapi.json",
+   "openapi/_original/aramark-financial-daily-account-summary.json",
+   "openapi/_original/aramark-growth-openapi.json",
+   "openapi/_original/aramark-growth.json",
+   "openapi/_original/aramark-gsc-gpo-0-openapi.json",
+   "openapi/_original/aramark-gsc-gpo-0.json",
+   "openapi/_original/aramark-inventory-openapi.json",
+   "openapi/_original/aramark-inventory.json",
+   "openapi/_original/aramark-iot-openapi.json",
+   "openapi/_original/aramark-iot.json",
+   "openapi/_original/aramark-labor-daily-openapi.json",
+   "openapi/_original/aramark-labor-daily.json",
+   "openapi/_original/aramark-labor-employee-openapi.json",
+   "openapi/_original/aramark-labor-employee.json",
+   "openapi/_original/aramark-labor-manager-employees-openapi.json",
+   "openapi/_original/aramark-labor-manager-employees.json",
+   "openapi/_original/aramark-labor-schedule-openapi.yaml",
+   "openapi/_original/aramark-labor-schedule.yaml",
+   "openapi/_original/aramark-line-business-core-details-openapi.json",
+   "openapi/_original/aramark-line-business-core-details.json",
+   "openapi/_original/aramark-location-core-details-openapi.json",
+   "openapi/_original/aramark-location-core-details.json",
+   "openapi/_original/aramark-marko-users-openapi.json",
+   "openapi/_original/aramark-marko-users.json",
+   "openapi/_original/aramark-operational-daily-openapi.json",
+   "openapi/_original/aramark-operational-daily.json",
+   "openapi/_original/aramark-organization-brands-openapi.json",
+   "openapi/_original/aramark-organization-brands.json",
+   "openapi/_original/aramark-organization-clients-openapi.json",
+   "openapi/_original/aramark-organization-clients.json",
+   "openapi/_original/aramark-organization-hierarchy-openapi.json",
+   "openapi/_original/aramark-organization-hierarchy-v2-openapi.json",
+   "openapi/_original/aramark-organization-hierarchy-v2.json",
+   "openapi/_original/aramark-organization-hierarchy.json",
+   "openapi/_original/aramark-organization-openapi.json",
+   "openapi/_original/aramark-organization-profit-center-core-details-openapi.json",
+   "openapi/_original/aramark-organization-profit-center-core-details.json",
+   "openapi/_original/aramark-organization-suppliers-openapi.json",
+   "openapi/_original/aramark-organization-suppliers.json",
+   "openapi/_original/aramark-organization.json",
+   "openapi/_original/aramark-point-sale-openapi.json",
+   "openapi/_original/aramark-point-sale.json",
+   "openapi/_original/aramark-pos-daily-product-ranking-openapi.json",
+   "openapi/_original/aramark-pos-daily-product-ranking.json",
+   "openapi/_original/aramark-pos-daily-sales-openapi.json",
+   "openapi/_original/aramark-pos-daily-sales.json",
+   "openapi/_original/aramark-pos-items-openapi.json",
+   "openapi/_original/aramark-pos-items.json",
+   "openapi/_original/aramark-pos-transactions-openapi.json",
+   "openapi/_original/aramark-pos-transactions.json",
+   "openapi/_original/aramark-product-openapi.json",
+   "openapi/_original/aramark-product-recipe-openapi.json",
+   "openapi/_original/aramark-product-recipe.json",
+   "openapi/_original/aramark-product-retail-items-openapi.json",
+   "openapi/_original/aramark-product-retail-items.json",
+   "openapi/_original/aramark-product.json",
+   "openapi/_original/aramark-profile-app-openapi.json",
+   "openapi/_original/aramark-profile-app.json",
+   "openapi/_original/aramark-profile-user-openapi.json",
+   "openapi/_original/aramark-profile-user.json",
+   "openapi/_original/aramark-recipe-decorations-openapi.json",
+   "openapi/_original/aramark-recipe-decorations.json",
+   "openapi/_original/aramark-region-core-details-openapi.json",
+   "openapi/_original/aramark-region-core-details.json",
+   "openapi/_original/aramark-security-openapi.json",
+   "openapi/_original/aramark-security.json",
+   "openapi/_original/aramark-service-areas-openapi.json",
+   "openapi/_original/aramark-service-areas-v2-openapi.json",
+   "openapi/_original/aramark-service-areas-v2.json",
+   "openapi/_original/aramark-service-areas.json",
+   "openapi/_original/aramark-service-inventory-openapi.json",
+   "openapi/_original/aramark-service-inventory.json",
+   "openapi/_original/aramark-service-meal-periods-openapi.json",
+   "openapi/_original/aramark-service-meal-periods.json",
+   "openapi/_original/aramark-service-menu-items-openapi.yaml",
+   "openapi/_original/aramark-service-menu-items.yaml",
+   "openapi/_original/aramark-service-menus-openapi.json",
+   "openapi/_original/aramark-service-menus.json",
+   "openapi/_original/aramark-service-openapi.json",
+   "openapi/_original/aramark-service-production-areas-openapi.yaml",
+   "openapi/_original/aramark-service-production-areas.yaml",
+   "openapi/_original/aramark-service-production-departments-openapi.yaml",
+   "openapi/_original/aramark-service-production-departments.yaml",
+   "openapi/_original/aramark-service-recipe-openapi.json",
+   "openapi/_original/aramark-service-recipe.json",
+   "openapi/_original/aramark-service-recipes-v2-openapi.json",
+   "openapi/_original/aramark-service-recipes-v2.json",
+   "openapi/_original/aramark-service-results-openapi.json",
+   "openapi/_original/aramark-service-results.json",
+   "openapi/_original/aramark-service-v3-openapi.json",
+   "openapi/_original/aramark-service-v3.json",
+   "openapi/_original/aramark-service-weekly-overproduction-openapi.json",
+   "openapi/_original/aramark-service-weekly-overproduction.json",
+   "openapi/_original/aramark-service.json",
+   "openapi/_original/aramark-sites-openapi.json",
+   "openapi/_original/aramark-sites.json",
+   "openapi/_original/aramark-sub-location-core-details-openapi.json",
+   "openapi/_original/aramark-sub-location-core-details.json",
+   "openapi/_original/aramark-sub-locations-openapi.json",
+   "openapi/_original/aramark-sub-locations.json",
+   "openapi/_original/aramark-units-measure-openapi.json",
+   "openapi/_original/aramark-units-measure.json",
+   "openapi/_original/aramark-vendor-openapi.json",
+   "openapi/_original/aramark-vendor.json"
+  ]
+ },
+ {
+  "slug": "autonomous-solutions",
+  "specs": [
+   "openapi/_original/autonomous-solutions-openapi.json"
+  ]
+ },
+ {
+  "slug": "aviationweather",
+  "specs": [
+   "openapi/_original/aviationweather-openapi.yml"
+  ]
+ },
+ {
+  "slug": "avis-budget",
+  "specs": [
+   "openapi/_original/avis-budget-rental-cars-openapi.json",
+   "openapi/_original/avis-budget-rental-cars-openapi.yml"
+  ]
+ },
+ {
+  "slug": "basetrip",
+  "specs": [
+   "openapi/_original/basetrip-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "bear-robotics",
+  "specs": [
+   "openapi/_original/bear-robotics-cloud-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "beds24",
+  "specs": [
+   "openapi/_original/beds24-openapi.yml"
+  ]
+ },
+ {
+  "slug": "beyond",
+  "specs": [
+   "openapi/_original/beyond-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "beyond-pricing",
+  "specs": [
+   "openapi/_original/beyond-pricing-openapi.yml"
+  ]
+ },
+ {
+  "slug": "booking-com",
+  "specs": [
+   "openapi/_original/booking-com-charges-api-openapi.yml",
+   "openapi/_original/booking-com-connect-api-openapi.yml",
+   "openapi/_original/booking-com-contracting-api-openapi.yml",
+   "openapi/_original/booking-com-demand-api-3-1-openapi.yml",
+   "openapi/_original/booking-com-demand-api-3-2-beta-openapi.yml",
+   "openapi/_original/booking-com-demand-api-3-2-openapi.yml",
+   "openapi/_original/booking-com-facilities-api-openapi.yml",
+   "openapi/_original/booking-com-facilities-api-remote-sync-openapi.yml",
+   "openapi/_original/booking-com-openapi.yml",
+   "openapi/_original/booking-com-payments-api-openapi.yml",
+   "openapi/_original/booking-com-payments-by-booking-onboarding-api-openapi.yml",
+   "openapi/_original/booking-com-property-api-openapi.yml",
+   "openapi/_original/booking-com-reconciliation-api-openapi.yml",
+   "openapi/_original/booking-com-rooms-api-bulk-openapi.yml",
+   "openapi/_original/booking-com-rooms-api-generated-names-openapi.yml",
+   "openapi/_original/booking-com-rooms-api-openapi.yml",
+   "openapi/_original/booking-com-valueadds-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "bookingcom",
+  "specs": [
+   "openapi/_original/bookingcom-booking-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "bookit-n-go",
+  "specs": [
+   "openapi/_original/bookit-n-go-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "booqable",
+  "specs": [
+   "openapi/_original/booqable-openapi.yml"
+  ]
+ },
+ {
+  "slug": "brandtrack",
+  "specs": [
+   "openapi/_original/brandtrack-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "bucketlist-nl",
+  "specs": [
+   "openapi/_original/droom-van-de-dag.openapi.json"
+  ]
+ },
+ {
+  "slug": "bureau-of-consular-affairs",
+  "specs": [
+   "openapi/_original/bureau-of-consular-affairs-openapi.yml"
+  ]
+ },
+ {
+  "slug": "bureau-of-transportation-statistics",
+  "specs": [
+   "openapi/_original/bureau-of-transportation-statistics-geodata-search-openapi.json",
+   "openapi/_original/bureau-of-transportation-statistics-openapi.yml"
+  ]
+ },
+ {
+  "slug": "cal-com",
+  "specs": [
+   "openapi/_original/cal-com-openapi.json"
+  ]
+ },
+ {
+  "slug": "calendly",
+  "specs": [
+   "openapi/_original/calendly-openapi.yml"
+  ]
+ },
+ {
+  "slug": "cargoai",
+  "specs": [
+   "openapi/_original/cargoai-booking-api-openapi.yml",
+   "openapi/_original/cargoai-cargo2zero-api-openapi.yml",
+   "openapi/_original/cargoai-cargocopilot-api-openapi.yml",
+   "openapi/_original/cargoai-fwb-fhl-api-openapi.yml",
+   "openapi/_original/cargoai-routes-schedules-and-rates-api-openapi.yml",
+   "openapi/_original/cargoai-track-and-trace-api-openapi.yml",
+   "openapi/_original/cargoai-user-provisioning-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "cargosmart",
+  "specs": [
+   "openapi/_original/cargosmart-shipment-tracking-openapi.yml"
+  ]
+ },
+ {
+  "slug": "channex",
+  "specs": [
+   "openapi/_original/channex-openapi.json"
+  ]
+ },
+ {
+  "slug": "chrome-river",
+  "specs": [
+   "openapi/_original/chrome-river-openapi.json"
+  ]
+ },
+ {
+  "slug": "cities-database-api",
+  "specs": [
+   "openapi/_original/cities-database-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "cliniko",
+  "specs": [
+   "openapi/_original/cliniko-openapi.yml"
+  ]
+ },
+ {
+  "slug": "cloudbeds",
+  "specs": [
+   "openapi/_original/cloudbeds-openapi.yml"
+  ]
+ },
+ {
+  "slug": "cobot",
+  "specs": [
+   "openapi/_original/cobot-api2-openapi.yml"
+  ]
+ },
+ {
+  "slug": "concur",
+  "specs": [
+   "openapi/_original/sap-concur-allocations-api-openapi.yml",
+   "openapi/_original/sap-concur-comments-api-openapi.yml",
+   "openapi/_original/sap-concur-expense-allocations-api-openapi.yml",
+   "openapi/_original/sap-concur-expense-expense-entries-api-openapi.yml",
+   "openapi/_original/sap-concur-expense-expense-reports-api-openapi.yml",
+   "openapi/_original/sap-concur-expense-group-configurations-api-openapi.yml",
+   "openapi/_original/sap-concur-expense-payment-batches-api-openapi.yml",
+   "openapi/_original/sap-concur-expense-quick-expenses-api-openapi.yml",
+   "openapi/_original/sap-concur-expense-receipt-images-api-openapi.yml",
+   "openapi/_original/sap-concur-expenses-api-openapi.yml",
+   "openapi/_original/sap-concur-reports-api-openapi.yml",
+   "openapi/_original/sap-concur-workflows-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "connexpay",
+  "specs": [
+   "openapi/_original/connexpay-chargebacks-openapi.yml",
+   "openapi/_original/connexpay-checkout-session-openapi.yml",
+   "openapi/_original/connexpay-merchant-payor-openapi.yml",
+   "openapi/_original/connexpay-payment-instruction-openapi.yml",
+   "openapi/_original/connexpay-purchases-openapi.yml",
+   "openapi/_original/connexpay-push-to-card-openapi.yml",
+   "openapi/_original/connexpay-reporting-authentication-openapi.yml",
+   "openapi/_original/connexpay-reporting-openapi.yml",
+   "openapi/_original/connexpay-sales-openapi.yml",
+   "openapi/_original/connexpay-stop-payment-service-openapi.yml"
+  ]
+ },
+ {
+  "slug": "cronofy",
+  "specs": [
+   "openapi/_original/cronofy-openapi.yml"
+  ]
+ },
+ {
+  "slug": "cruisebound",
+  "specs": [
+   "openapi/_original/openapi.json"
+  ]
+ },
+ {
+  "slug": "crunchtime",
+  "specs": [
+   "openapi/_original/crunchtime-cruise-platform-openapi.yml",
+   "openapi/_original/crunchtime-cruise-platform-readme-slices.json",
+   "openapi/_original/crunchtime-inventory-labor-openapi.yml",
+   "openapi/_original/crunchtime-inventory-labor-readme-slices.json"
+  ]
+ },
+ {
+  "slug": "crunchtime-information-systems",
+  "specs": [
+   "openapi/_original/crunchtime-information-systems-cruise-platform-openapi.yml",
+   "openapi/_original/crunchtime-information-systems-cruise-platform-readme-slices.json",
+   "openapi/_original/crunchtime-information-systems-inventory-labor-openapi.yml",
+   "openapi/_original/crunchtime-information-systems-inventory-labor-readme-slices.json"
+  ]
+ },
+ {
+  "slug": "cvent",
+  "specs": [
+   "openapi/_original/cvent-openapi.json",
+   "openapi/_original/cvent-public-spec-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "cvent-hospitality-cloud",
+  "specs": [
+   "openapi/_original/cvent-hospitality-cloud-authentication-openapi.yml",
+   "openapi/_original/cvent-hospitality-cloud-event-travel-openapi.yml",
+   "openapi/_original/cvent-hospitality-cloud-housing-hotels-openapi.yml",
+   "openapi/_original/cvent-hospitality-cloud-housing-openapi.yml",
+   "openapi/_original/cvent-hospitality-cloud-meeting-requests-openapi.yml",
+   "openapi/_original/cvent-hospitality-cloud-proposal-drafts-openapi.yml",
+   "openapi/_original/cvent-hospitality-cloud-rest-apis-openapi.json",
+   "openapi/_original/cvent-hospitality-cloud-rfp-additional-details-openapi.yml",
+   "openapi/_original/cvent-hospitality-cloud-rfp-management-openapi.yml",
+   "openapi/_original/cvent-hospitality-cloud-rfp-requirements-openapi.yml",
+   "openapi/_original/cvent-hospitality-cloud-rfp-suppliers-openapi.yml",
+   "openapi/_original/cvent-hospitality-cloud-signatures-openapi.yml",
+   "openapi/_original/cvent-hospitality-cloud-travel-accounts-openapi.yml",
+   "openapi/_original/cvent-hospitality-cloud-travel-rfps-openapi.yml",
+   "openapi/_original/cvent-hospitality-cloud-travel-suppliers-openapi.yml",
+   "openapi/_original/cvent-hospitality-cloud-venue-meeting-rooms-openapi.yml",
+   "openapi/_original/cvent-hospitality-cloud-venue-profiles-openapi.yml"
+  ]
+ },
+ {
+  "slug": "cvent-platform",
+  "specs": [
+   "openapi/_original/cvent-platform-openapi.yml"
+  ]
+ },
+ {
+  "slug": "cvent-social-tables",
+  "specs": [
+   "openapi/_original/cvent-social-tables-openapi.json"
+  ]
+ },
+ {
+  "slug": "delos",
+  "specs": [
+   "openapi/_original/delos-wellcube-cloud-be-openapi-original.json",
+   "openapi/_original/delos-wellcube-cloud-be-openapi.yml"
+  ]
+ },
+ {
+  "slug": "department-of-state",
+  "specs": [
+   "openapi/_original/department-of-state-data-json-dcat-us.json",
+   "openapi/_original/department-of-state-state-gov-content-openapi.yml",
+   "openapi/_original/department-of-state-wp-json-collection-options.json",
+   "openapi/_original/department-of-state-wp-json-item-options.json",
+   "openapi/_original/department-of-state-wp-json-route-index.json"
+  ]
+ },
+ {
+  "slug": "department-of-transportation",
+  "specs": [
+   "openapi/_original/department-of-transportation-openapi.json",
+   "openapi/_original/faa-system-status-api-openapi.yml",
+   "openapi/_original/fmcsa-qcmobile-api-openapi.yml",
+   "openapi/_original/nhtsa-recalls-api-openapi.yml",
+   "openapi/_original/nhtsa-vpic-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "despegar",
+  "specs": [
+   "openapi/_original/despegar-activities-openapi.json",
+   "openapi/_original/despegar-aftersales-openapi.json",
+   "openapi/_original/despegar-booking-openapi.json",
+   "openapi/_original/despegar-flights-openapi.json",
+   "openapi/_original/despegar-geo-openapi.json",
+   "openapi/_original/despegar-hotels-openapi.json"
+  ]
+ },
+ {
+  "slug": "dot",
+  "specs": [
+   "openapi/_original/nhtsa-datasets-api.json"
+  ]
+ },
+ {
+  "slug": "dtn",
+  "specs": [
+   "openapi/_original/dtn-agency-bulletin-api-openapi.json",
+   "openapi/_original/dtn-agency-bulletin-websocket-api-openapi.json",
+   "openapi/_original/dtn-alerting-api-openapi.json",
+   "openapi/_original/dtn-astronomical-api-openapi.json",
+   "openapi/_original/dtn-climatology-api-openapi.json",
+   "openapi/_original/dtn-developer-portal-api-openapi.json",
+   "openapi/_original/dtn-digital-commerce-orders-openapi.json",
+   "openapi/_original/dtn-energy-digital-commerce-integrations-api-openapi.json",
+   "openapi/_original/dtn-energy-event-index-api-openapi.json",
+   "openapi/_original/dtn-enhanced-flight-hazards-api-openapi.json",
+   "openapi/_original/dtn-farm-intel-api-openapi.json",
+   "openapi/_original/dtn-financial-market-data-openapi.json",
+   "openapi/_original/dtn-lightning-api-openapi.json",
+   "openapi/_original/dtn-lightning-websocket-openapi.json",
+   "openapi/_original/dtn-map-tile-api-openapi.json",
+   "openapi/_original/dtn-marine-weather-api-openapi.json",
+   "openapi/_original/dtn-metars-api-openapi.json",
+   "openapi/_original/dtn-notams-api-openapi.json",
+   "openapi/_original/dtn-observation-api-openapi.json",
+   "openapi/_original/dtn-openapi.json",
+   "openapi/_original/dtn-pavement-conditions-api-openapi.json",
+   "openapi/_original/dtn-pireps-api-openapi.json",
+   "openapi/_original/dtn-precipitation-api-openapi.json",
+   "openapi/_original/dtn-probabilistic-api-openapi.json",
+   "openapi/_original/dtn-radarscope-radar-products-openapi.json",
+   "openapi/_original/dtn-refined-fuels-demand-openapi.json",
+   "openapi/_original/dtn-renewables-api-openapi.json",
+   "openapi/_original/dtn-shipping-api-openapi.json",
+   "openapi/_original/dtn-sigmets-airmets-openapi.json",
+   "openapi/_original/dtn-soil-api-openapi.json",
+   "openapi/_original/dtn-storm-impact-analytics-openapi.json",
+   "openapi/_original/dtn-storm-risk-analytics-api-openapi.json",
+   "openapi/_original/dtn-tafs-api-openapi.json",
+   "openapi/_original/dtn-tropical-api-openapi.json",
+   "openapi/_original/dtn-weather-conditions-api-openapi.json",
+   "openapi/_original/dtn-weather-conditions-openapi.yml",
+   "openapi/_original/dtn-websocket-api-openapi.json",
+   "openapi/_original/dtn-windsaloft-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "duffel",
+  "specs": [
+   "openapi/_original/duffel-openapi.yml"
+  ]
+ },
+ {
+  "slug": "e2open",
+  "specs": [
+   "openapi/_original/inttra-ocean-execution-openapi.yml"
+  ]
+ },
+ {
+  "slug": "eat-app",
+  "specs": [
+   "openapi/_original/eat-app-openapi.yml"
+  ]
+ },
+ {
+  "slug": "edelweiss-hotel-polyana-api",
+  "specs": [
+   "openapi/_original/edelweiss-hotel-polyana-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "electra.aero",
+  "specs": [
+   "openapi/_original/electra.aero-content-openapi.yml"
+  ]
+ },
+ {
+  "slug": "epos-now",
+  "specs": [
+   "openapi/_original/epos-now-openapi.yml"
+  ]
+ },
+ {
+  "slug": "expedia-group",
+  "specs": [
+   "openapi/_original/expedia-deposit-openapi-original.yml",
+   "openapi/_original/expedia-fraud-protection-openapi-original.yml",
+   "openapi/_original/expedia-lodging-product-openapi-original.yml",
+   "openapi/_original/expedia-loyalty-openapi-original.yml",
+   "openapi/_original/expedia-rapid-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "faa",
+  "specs": [
+   "openapi/_original/faa-aeronautic-product-release-api-openapi.yml",
+   "openapi/_original/faa-air-carrier-prd-api-openapi.yml",
+   "openapi/_original/faa-airport-status-web-service-openapi.yml",
+   "openapi/_original/faa-openapi.json",
+   "openapi/_original/faa-safety-assurance-system-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "famxplor-family-travel-api",
+  "specs": [
+   "openapi/_original/famxplor-family-travel-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "fareharbor",
+  "specs": [
+   "openapi/_original/fareharbor-home-openapi.yml"
+  ]
+ },
+ {
+  "slug": "flightaware",
+  "specs": [
+   "openapi/_original/flightaware-openapi.yml"
+  ]
+ },
+ {
+  "slug": "flightfinder",
+  "specs": [
+   "openapi/_original/flightfinder-aviation-safety-data-openapi.json"
+  ]
+ },
+ {
+  "slug": "flightlabs",
+  "specs": [
+   "openapi/_original/openapi.yml"
+  ]
+ },
+ {
+  "slug": "flightradar24",
+  "specs": [
+   "openapi/_original/openapi.yml"
+  ]
+ },
+ {
+  "slug": "fudo",
+  "specs": [
+   "openapi/_original/fudo-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "general-services-administration",
+  "specs": [
+   "openapi/_original/general-services-administration-acquisition-gateway-listings-openapi.yaml",
+   "openapi/_original/general-services-administration-acquisition-subaward-reporting-openapi.yaml",
+   "openapi/_original/general-services-administration-analytics-dap-openapi.yaml",
+   "openapi/_original/general-services-administration-apidatagov-admin-openapi.yaml",
+   "openapi/_original/general-services-administration-apidatagov-metrics-openapi.yaml",
+   "openapi/_original/general-services-administration-assistance-listings-openapi.yaml",
+   "openapi/_original/general-services-administration-assistance-subaward-reporting-openapi.yaml",
+   "openapi/_original/general-services-administration-contract-awards-openapi.yaml",
+   "openapi/_original/general-services-administration-datagov-ckan-openapi.yaml",
+   "openapi/_original/general-services-administration-it-collect-openapi.json",
+   "openapi/_original/general-services-administration-per-diem-openapi.yaml",
+   "openapi/_original/general-services-administration-regulations-gov-openapi.yaml",
+   "openapi/_original/general-services-administration-sam-entity-extracts-openapi.yaml",
+   "openapi/_original/general-services-administration-sam-entity-management-openapi.yaml",
+   "openapi/_original/general-services-administration-sam-exclusions-openapi.yaml",
+   "openapi/_original/general-services-administration-sam-opportunity-management-openapi.json",
+   "openapi/_original/general-services-administration-sam-subaward-bulkupload-openapi.yaml",
+   "openapi/_original/general-services-administration-sam-subcontracting-plan-reports-openapi.yaml",
+   "openapi/_original/general-services-administration-searchgov-clicks-openapi.yaml",
+   "openapi/_original/general-services-administration-searchgov-results-openapi.yaml",
+   "openapi/_original/general-services-administration-site-scanning-openapi.json",
+   "openapi/_original/general-services-administration-touchpoints-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "getyourguide",
+  "specs": [
+   "openapi/_original/getyourguide-openapi.yml"
+  ]
+ },
+ {
+  "slug": "grubhub",
+  "specs": [
+   "openapi/_original/grubhub-busy-intervals-openapi.yml",
+   "openapi/_original/grubhub-connect-endpoints-openapi.yml",
+   "openapi/_original/grubhub-connect-webhooks-openapi.yml",
+   "openapi/_original/grubhub-deliveries-openapi.yml",
+   "openapi/_original/grubhub-menu-openapi.yml",
+   "openapi/_original/grubhub-merchant-data-openapi.yml",
+   "openapi/_original/grubhub-merchant-schedules-openapi.yml",
+   "openapi/_original/grubhub-onboarding-openapi.yml",
+   "openapi/_original/grubhub-orders-openapi.yml",
+   "openapi/_original/grubhub-reporting-endpoints-openapi.yml",
+   "openapi/_original/grubhub-reporting-webhooks-openapi.yml",
+   "openapi/_original/grubhub-testing-openapi.yml"
+  ]
+ },
+ {
+  "slug": "guestready",
+  "specs": [
+   "openapi/_original/guestready-rentalready-openapi.yml",
+   "openapi/_original/guestready-rentalready-openapi_2.yml"
+  ]
+ },
+ {
+  "slug": "harri",
+  "specs": [
+   "openapi/_original/harri-employee-openapi.yml",
+   "openapi/_original/harri-employer-openapi.json"
+  ]
+ },
+ {
+  "slug": "hellosafe",
+  "specs": [
+   "openapi/_original/hellosafe-openapi.json"
+  ]
+ },
+ {
+  "slug": "hilton",
+  "specs": [
+   "openapi/_original/hilton-hilton-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "holidu",
+  "specs": [
+   "openapi/_original/holidu-affiliate-api.json",
+   "openapi/_original/holidu-connectivity-api.json",
+   "openapi/_original/holidu-hapi-with-oauth20.json",
+   "openapi/_original/holidu-security-service-with-client-credentials.json",
+   "openapi/_original/holidu-security-service-with-tokens.json"
+  ]
+ },
+ {
+  "slug": "hopper-com",
+  "specs": [
+   "openapi/_original/hopper-airlines-openapi.yml"
+  ]
+ },
+ {
+  "slug": "hospitable",
+  "specs": [
+   "openapi/_original/hospitable-openapi.yml"
+  ]
+ },
+ {
+  "slug": "hostfully",
+  "specs": [
+   "openapi/_original/hostfully-api-readme-slices.json"
+  ]
+ },
+ {
+  "slug": "hotel-engine",
+  "specs": [
+   "openapi/_original/hotel-engine-omni-partner-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "hotelbeds",
+  "specs": [
+   "openapi/_original/hotelbeds-openapi.yml"
+  ]
+ },
+ {
+  "slug": "hotelrunner",
+  "specs": [
+   "openapi/_original/hotelrunner-openapi.yml"
+  ]
+ },
+ {
+  "slug": "icao",
+  "specs": [
+   "openapi/_original/icao-api-services-openapi.json",
+   "openapi/_original/icao-openapi.yml"
+  ]
+ },
+ {
+  "slug": "icon-aircraft",
+  "specs": [
+   "openapi/_original/icon-aircraft-content-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "impala",
+  "specs": [
+   "openapi/_original/impala-hotels-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "klook",
+  "specs": [
+   "openapi/_original/klook-octo-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "lafourchette",
+  "specs": [
+   "openapi/_original/lafourchette-b2b-api-openapi.yml",
+   "openapi/_original/lafourchette-pos-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "landing",
+  "specs": [
+   "openapi/_original/landing-public-openapi.json"
+  ]
+ },
+ {
+  "slug": "launch27",
+  "specs": [
+   "openapi/_original/launch27-openapi.yml"
+  ]
+ },
+ {
+  "slug": "lighthouse-travel",
+  "specs": [
+   "openapi/_original/lighthouse-travel-integration-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "lodgify",
+  "specs": [
+   "openapi/_original/lodgify-openapi.yml"
+  ]
+ },
+ {
+  "slug": "lokki",
+  "specs": [
+   "openapi/_original/lokki-dashboard-api-openapi.json",
+   "openapi/_original/lokki-external-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "lufthansa",
+  "specs": [
+   "openapi/_original/lufthansa-openapi.yml"
+  ]
+ },
+ {
+  "slug": "lufthansa-cargo",
+  "specs": [
+   "openapi/_original/lufthansa-cargo-routing-offer-api-openapi.yml",
+   "openapi/_original/lufthansa-cargo-station-information-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "lyft",
+  "specs": [
+   "openapi/_original/lyft-concierge-openapi.yml",
+   "openapi/_original/lyft-ride-sharing-openapi.yml"
+  ]
+ },
+ {
+  "slug": "marubox",
+  "specs": [
+   "openapi/_original/marubox-openapi.json"
+  ]
+ },
+ {
+  "slug": "mews-com",
+  "specs": [
+   "openapi/_original/mews-booking-engine-api-openapi.yml",
+   "openapi/_original/mews-connector-api-openapi.yml",
+   "openapi/_original/mews-distributor-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "mindbody",
+  "specs": [
+   "openapi/_original/mindbody-public-api-v6-openapi-original.yml",
+   "openapi/_original/mindbody-webhooks-api-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "momence",
+  "specs": [
+   "openapi/_original/momence-openapi.yml"
+  ]
+ },
+ {
+  "slug": "neuehouse",
+  "specs": [
+   "openapi/_original/neuehouse-wp-json-index.json"
+  ]
+ },
+ {
+  "slug": "noaa-gov",
+  "specs": [
+   "openapi/_original/weather-gov-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "nory",
+  "specs": [
+   "openapi/_original/nory-middleware-openapi.json"
+  ]
+ },
+ {
+  "slug": "nuitee",
+  "specs": [
+   "openapi/_original/nuitee-openapi.yml"
+  ]
+ },
+ {
+  "slug": "octo",
+  "specs": [
+   "openapi/_original/octo-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "olo",
+  "specs": [
+   "openapi/_original/olo-ordering-openapi.yml",
+   "openapi/_original/olo-promotions-openapi.yml"
+  ]
+ },
+ {
+  "slug": "opensky",
+  "specs": [
+   "openapi/_original/opensky-rest-api.json"
+  ]
+ },
+ {
+  "slug": "opentravel-alliance",
+  "specs": [
+   "openapi/_original/opentravel-2018a-facility-resource-defs-openapi.json",
+   "openapi/_original/opentravel-2018a-facility-resource-openapi.json",
+   "openapi/_original/opentravel-2018a-hospitality-offers-resource-defs-openapi.json",
+   "openapi/_original/opentravel-2018a-hospitality-offers-resource-openapi.json",
+   "openapi/_original/opentravel-2020a-facility-resource-defs-openapi.json",
+   "openapi/_original/opentravel-2020a-facility-resource-openapi.json",
+   "openapi/_original/opentravel-2020a-hotel-descriptive-content-resource-defs-openapi.json",
+   "openapi/_original/opentravel-2020a-hotel-descriptive-content-resource-openapi.json"
+  ]
+ },
+ {
+  "slug": "opentripmap",
+  "specs": [
+   "openapi/_original/opentripmap-openapi.json"
+  ]
+ },
+ {
+  "slug": "opplevagent-no",
+  "specs": [
+   "openapi/_original/opplevagent-no-openapi.json",
+   "openapi/_original/opplevagent-no-openapi.yml"
+  ]
+ },
+ {
+  "slug": "oracle-hospitality",
+  "specs": [
+   "openapi/_original/oracle-hospitality-distribution-outbound-aripublication.json",
+   "openapi/_original/oracle-hospitality-distribution-outbound-lookup.json",
+   "openapi/_original/oracle-hospitality-distribution-outbound-notification.json",
+   "openapi/_original/oracle-hospitality-distribution-v1-book.json",
+   "openapi/_original/oracle-hospitality-distribution-v1-content.json",
+   "openapi/_original/oracle-hospitality-distribution-v1-controls.json",
+   "openapi/_original/oracle-hospitality-distribution-v1-distribution.json",
+   "openapi/_original/oracle-hospitality-distribution-v1-hdpbaoauth2.json",
+   "openapi/_original/oracle-hospitality-distribution-v1-onboard.json",
+   "openapi/_original/oracle-hospitality-distribution-v1-resnotif.json",
+   "openapi/_original/oracle-hospitality-distribution-v1-shop.json",
+   "openapi/_original/oracle-hospitality-nor1-v1-upselloffers.json",
+   "openapi/_original/oracle-hospitality-property-outbound-crmoutbound.json",
+   "openapi/_original/oracle-hospitality-property-outbound-cshoutbound.json",
+   "openapi/_original/oracle-hospitality-property-outbound-fofoutbound.json",
+   "openapi/_original/oracle-hospitality-property-v1-act.json",
+   "openapi/_original/oracle-hospitality-property-v1-actcfg.json",
+   "openapi/_original/oracle-hospitality-property-v1-ars.json",
+   "openapi/_original/oracle-hospitality-property-v1-blk.json",
+   "openapi/_original/oracle-hospitality-property-v1-blkasync.json",
+   "openapi/_original/oracle-hospitality-property-v1-blkcfg.json",
+   "openapi/_original/oracle-hospitality-property-v1-bof.json",
+   "openapi/_original/oracle-hospitality-property-v1-chl.json",
+   "openapi/_original/oracle-hospitality-property-v1-cms.json",
+   "openapi/_original/oracle-hospitality-property-v1-crm.json",
+   "openapi/_original/oracle-hospitality-property-v1-crmasync.json",
+   "openapi/_original/oracle-hospitality-property-v1-crmcfg.json",
+   "openapi/_original/oracle-hospitality-property-v1-csh.json",
+   "openapi/_original/oracle-hospitality-property-v1-cshasync.json",
+   "openapi/_original/oracle-hospitality-property-v1-dvm.json",
+   "openapi/_original/oracle-hospitality-property-v1-ecommtokenization.json",
+   "openapi/_original/oracle-hospitality-property-v1-entcfg.json",
+   "openapi/_original/oracle-hospitality-property-v1-evm.json",
+   "openapi/_original/oracle-hospitality-property-v1-evmcfg.json",
+   "openapi/_original/oracle-hospitality-property-v1-expcfg.json",
+   "openapi/_original/oracle-hospitality-property-v1-fof.json",
+   "openapi/_original/oracle-hospitality-property-v1-fofcfg.json",
+   "openapi/_original/oracle-hospitality-property-v1-hsk.json",
+   "openapi/_original/oracle-hospitality-property-v1-int.json",
+   "openapi/_original/oracle-hospitality-property-v1-intcfg.json",
+   "openapi/_original/oracle-hospitality-property-v1-inv.json",
+   "openapi/_original/oracle-hospitality-property-v1-invasync.json",
+   "openapi/_original/oracle-hospitality-property-v1-lms.json",
+   "openapi/_original/oracle-hospitality-property-v1-lov.json",
+   "openapi/_original/oracle-hospitality-property-v1-medcfg.json",
+   "openapi/_original/oracle-hospitality-property-v1-oauth.json",
+   "openapi/_original/oracle-hospitality-property-v1-ops.json",
+   "openapi/_original/oracle-hospitality-property-v1-par.json",
+   "openapi/_original/oracle-hospitality-property-v1-parasync.json",
+   "openapi/_original/oracle-hospitality-property-v1-repcfg.json",
+   "openapi/_original/oracle-hospitality-property-v1-rmcfg.json",
+   "openapi/_original/oracle-hospitality-property-v1-rmr.json",
+   "openapi/_original/oracle-hospitality-property-v1-rmrcfg.json",
+   "openapi/_original/oracle-hospitality-property-v1-rsv.json",
+   "openapi/_original/oracle-hospitality-property-v1-rsvasync.json",
+   "openapi/_original/oracle-hospitality-property-v1-rsvcfg.json",
+   "openapi/_original/oracle-hospitality-property-v1-rtp.json",
+   "openapi/_original/oracle-hospitality-property-v1-rtpasync.json",
+   "openapi/_original/oracle-hospitality-property-v1-tokenexchange.json"
+  ]
+ },
+ {
+  "slug": "outdoorsy",
+  "specs": [
+   "openapi/_original/outdoorsy-openapi-original.json",
+   "openapi/_original/outdoorsy-search-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "ownerrez",
+  "specs": [
+   "openapi/_original/ownerrez-openapi.yml"
+  ]
+ },
+ {
+  "slug": "parkwhiz",
+  "specs": [
+   "openapi/_original/parkwhiz-openapi.yml"
+  ]
+ },
+ {
+  "slug": "perk",
+  "specs": [
+   "openapi/_original/perk-cost-centers-api-readme-slices.json",
+   "openapi/_original/perk-custom-fields-api-readme-slices.json",
+   "openapi/_original/perk-custom-fields-openapi.yml",
+   "openapi/_original/perk-custom-fields-readme-slices.json",
+   "openapi/_original/perk-scim-server-openapi.yml",
+   "openapi/_original/perk-scim-server-readme-slices.json",
+   "openapi/_original/perk-travelperk-api-v1-openapi.yml",
+   "openapi/_original/perk-travelperk-api-v1-readme-slices.json"
+  ]
+ },
+ {
+  "slug": "pliant",
+  "specs": [
+   "openapi/_original/pliant-customer-api-readme-slices.json"
+  ]
+ },
+ {
+  "slug": "quandoo",
+  "specs": [
+   "openapi/_original/quandoo-public-partner-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "quinyx",
+  "specs": [
+   "openapi/_original/quinyx-api-v2-openapi.yml",
+   "openapi/_original/quinyx-api-v3-openapi.yml",
+   "openapi/_original/quinyx-userapi-v2-openapi.yml"
+  ]
+ },
+ {
+  "slug": "rakuten",
+  "specs": [
+   "openapi/_original/rakuten-openapi.yml"
+  ]
+ },
+ {
+  "slug": "ratehawk",
+  "specs": [
+   "openapi/_original/ratehawk-openapi.yml"
+  ]
+ },
+ {
+  "slug": "reefapi",
+  "specs": [
+   "openapi/_original/reefapi-openapi.json"
+  ]
+ },
+ {
+  "slug": "rentle",
+  "specs": [
+   "openapi/_original/rentle-admin-openapi.json"
+  ]
+ },
+ {
+  "slug": "restaurant-brands",
+  "specs": [
+   "openapi/_original/channel-openapi.yml",
+   "openapi/_original/menu-v2-openapi.yml"
+  ]
+ },
+ {
+  "slug": "revinate",
+  "specs": [
+   "openapi/_original/revinate-porter-api-docs-resource-listing.json",
+   "openapi/_original/revinate-porter-hotel-sets-swagger12.json",
+   "openapi/_original/revinate-porter-hotels-swagger12.json",
+   "openapi/_original/revinate-porter-languages-swagger12.json",
+   "openapi/_original/revinate-porter-openapi.yml",
+   "openapi/_original/revinate-porter-review-sites-swagger12.json",
+   "openapi/_original/revinate-porter-reviews-swagger12.json",
+   "openapi/_original/revinate-porter-widget-reviews-swagger12.json"
+  ]
+ },
+ {
+  "slug": "rockwell-collins",
+  "specs": [
+   "openapi/_original/flightaware-aeroapi-openapi.yml"
+  ]
+ },
+ {
+  "slug": "roomkeypms",
+  "specs": [
+   "openapi/_original/roomkeypms-openapi.yml"
+  ]
+ },
+ {
+  "slug": "sabre",
+  "specs": [
+   "openapi/_original/sabre-bargain-finder-max-openapi.yml",
+   "openapi/_original/sabre-hotels-openapi.yml"
+  ]
+ },
+ {
+  "slug": "sap-concur-expense",
+  "specs": [
+   "openapi/_original/sap-concur-expense-report-openapi.yml"
+  ]
+ },
+ {
+  "slug": "savvycal",
+  "specs": [
+   "openapi/_original/savvycal-meetings-openapi.yml"
+  ]
+ },
+ {
+  "slug": "shell",
+  "specs": [
+   "openapi/_original/shell-b2b-mobility-openapi.yml",
+   "openapi/_original/shell-loyalty-openapi.yml",
+   "openapi/_original/shell-lubricants-openapi.yml"
+  ]
+ },
+ {
+  "slug": "skymerse",
+  "specs": [
+   "openapi/_original/skymerse-notamify-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "soothe",
+  "specs": [
+   "openapi/_original/soothe-help-center-mirror-openapi.json"
+  ]
+ },
+ {
+  "slug": "spotnana",
+  "specs": [
+   "openapi/_original/spotnana-air-openapi-original.json",
+   "openapi/_original/spotnana-auth-openapi-original.json",
+   "openapi/_original/spotnana-company-openapi-original.json",
+   "openapi/_original/spotnana-document-openapi-original.json",
+   "openapi/_original/spotnana-event-openapi-original.json",
+   "openapi/_original/spotnana-hotel-openapi-original.json",
+   "openapi/_original/spotnana-payments-openapi-original.json",
+   "openapi/_original/spotnana-policy-openapi-original.json",
+   "openapi/_original/spotnana-template-openapi-original.json",
+   "openapi/_original/spotnana-trip-openapi-original.json",
+   "openapi/_original/spotnana-users-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "spurwing",
+  "specs": [
+   "openapi/_original/spurwing-openapi.yml"
+  ]
+ },
+ {
+  "slug": "square",
+  "specs": [
+   "openapi/_original/square-openapi.yml"
+  ]
+ },
+ {
+  "slug": "starlink",
+  "specs": [
+   "openapi/_original/starlink-public-api-v2-openapi.json"
+  ]
+ },
+ {
+  "slug": "starwood-hotels-and-resorts",
+  "specs": [
+   "openapi/_original/starwood-hotel-search-openapi.yml"
+  ]
+ },
+ {
+  "slug": "state-dept",
+  "specs": [
+   "openapi/_original/state-dept-consular-affairs-openapi.json"
+  ]
+ },
+ {
+  "slug": "stayingapi",
+  "specs": [
+   "openapi/_original/stayingapi-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "switchfly",
+  "specs": [
+   "openapi/_original/switchfly-loyalty-openapi.json"
+  ]
+ },
+ {
+  "slug": "tabit",
+  "specs": [
+   "openapi/_original/tabit-openapi.yml"
+  ]
+ },
+ {
+  "slug": "tablecheck",
+  "specs": [
+   "openapi/_original/tablecheck-availability.yml",
+   "openapi/_original/tablecheck-booking.yml",
+   "openapi/_original/tablecheck-crm.yml",
+   "openapi/_original/tablecheck-pos.yml",
+   "openapi/_original/tablecheck-site-controller.yml",
+   "openapi/_original/tablecheck-web-booking.yml"
+  ]
+ },
+ {
+  "slug": "thefork",
+  "specs": [
+   "openapi/_original/lafourchette-booking-flow-api-openapi.yml",
+   "openapi/_original/lafourchette-data-api-openapi.yml",
+   "openapi/_original/lafourchette-phone-api-openapi.yml",
+   "openapi/_original/lafourchette-review-flow-api-openapi.yml",
+   "openapi/_original/lafourchette-v1-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "tictactrip",
+  "specs": [
+   "openapi/_original/tictactrip-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "toast",
+  "specs": [
+   "openapi/_original/toast-analytics-openapi.yaml",
+   "openapi/_original/toast-authentication-openapi.yaml",
+   "openapi/_original/toast-cash-management-openapi.yaml",
+   "openapi/_original/toast-configuration-openapi.yaml",
+   "openapi/_original/toast-credit-cards-openapi.yaml",
+   "openapi/_original/toast-device-details-openapi.yaml",
+   "openapi/_original/toast-gift-cards-openapi.yaml",
+   "openapi/_original/toast-kitchen-openapi.yaml",
+   "openapi/_original/toast-labor-openapi.yaml",
+   "openapi/_original/toast-loyalty-openapi.yaml",
+   "openapi/_original/toast-menus-openapi.yaml",
+   "openapi/_original/toast-menus-v3-openapi.yaml",
+   "openapi/_original/toast-ordermgmt-configuration-openapi.yaml",
+   "openapi/_original/toast-orders-openapi.yaml",
+   "openapi/_original/toast-packaging-openapi.yaml",
+   "openapi/_original/toast-partners-openapi.yaml",
+   "openapi/_original/toast-restaurant-availability-openapi.yaml",
+   "openapi/_original/toast-restaurants-openapi.yaml",
+   "openapi/_original/toast-stock-openapi.yaml",
+   "openapi/_original/toast-tender-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "tock",
+  "specs": [
+   "openapi/_original/tock-guest-profile-openapi.yml",
+   "openapi/_original/tock-reservation-openapi.yml"
+  ]
+ },
+ {
+  "slug": "tomorrow-io",
+  "specs": [
+   "openapi/_original/tomorrow-io-map-tiles-api-openapi.yml",
+   "openapi/_original/tomorrow-io-weather-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "tourradar",
+  "specs": [
+   "openapi/_original/tourradar-openapi.yml",
+   "openapi/_original/tourradar-partner-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "trail",
+  "specs": [
+   "openapi/_original/trail_areas_v1.yaml",
+   "openapi/_original/trail_evo_api_v1.yaml",
+   "openapi/_original/trail_scores_v1.yaml",
+   "openapi/_original/trail_sites_v1.yaml",
+   "openapi/_original/trail_tags_v1.yaml",
+   "openapi/_original/trail_task_instances_v1.yaml",
+   "openapi/_original/trail_task_reports_v1.yaml",
+   "openapi/_original/trail_task_templates_v1.yaml"
+  ]
+ },
+ {
+  "slug": "travel-risk-api",
+  "specs": [
+   "openapi/_original/travel-risk-api-aviation-openapi.json",
+   "openapi/_original/travel-risk-api-aviation-openapi.yml",
+   "openapi/_original/travel-risk-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "traveloka",
+  "specs": [
+   "openapi/_original/traveloka-atlas-api.json",
+   "openapi/_original/traveloka-atlas-supplier-api-openapi.yml",
+   "openapi/_original/traveloka-loka-api-v2.json",
+   "openapi/_original/traveloka-loka-partner-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "travelperk",
+  "specs": [
+   "openapi/_original/travelperk-openapi.yml"
+  ]
+ },
+ {
+  "slug": "travelport",
+  "specs": [
+   "openapi/_original/travelport-openapi.yml"
+  ]
+ },
+ {
+  "slug": "trellistech",
+  "specs": [
+   "openapi/_original/trellistech-public-api.json"
+  ]
+ },
+ {
+  "slug": "tripadvisor",
+  "specs": [
+   "openapi/_original/tripadvisor-content-api-openapi.yml",
+   "openapi/_original/tripadvisor-hotel-availability-check-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "tripcom",
+  "specs": [
+   "openapi/_original/tripcom-plugin-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "tui-group",
+  "specs": [
+   "openapi/_original/tui-group-tui-b2bota-g7-travelmessage-openapi.yml",
+   "openapi/_original/tui-group-tui-checkinhandler-service-api-openapi.yml",
+   "openapi/_original/tui-group-tui-cruise-booking-apis-openapi.yml",
+   "openapi/_original/tui-group-tui-cruise-cabin-availability-openapi.yml",
+   "openapi/_original/tui-group-tui-cruise-price-and-availability-openapi.yml",
+   "openapi/_original/tui-group-tui-flight-availability-search-api-openapi.yml",
+   "openapi/_original/tui-group-tui-flight-ndc-gateway-openapi.yml",
+   "openapi/_original/tui-group-tui-flight-ota-api-openapi.yml",
+   "openapi/_original/tui-group-tui-holiday-offers-controller-api-openapi.yml",
+   "openapi/_original/tui-group-tui-meta-partner-package-live-search-openapi.yml",
+   "openapi/_original/tui-group-tui-meta-partner-packages-flights-openapi.yml",
+   "openapi/_original/tui-group-tui-meta-search-generic-api-openapi.yml",
+   "openapi/_original/tui-group-tui-newskies-digital-api-openapi.yml",
+   "openapi/_original/tui-group-tui-newskies-gonow-api-openapi.yml",
+   "openapi/_original/tui-group-tui-newskies-payment-api-openapi.yml",
+   "openapi/_original/tui-group-tui-newskies-pricefile-api-openapi.yml",
+   "openapi/_original/tui-group-tui-ota-content-api-openapi.yml",
+   "openapi/_original/tui-group-tui-partner-content-api-openapi.yml",
+   "openapi/_original/tui-group-tui-search-walldy-api-openapi.yml",
+   "openapi/_original/tui-group-tui-ship-content-api-openapi.yml",
+   "openapi/_original/tui-group-tui-supply-openapi.yml"
+  ]
+ },
+ {
+  "slug": "uncle-nearest",
+  "specs": [
+   "openapi/_original/uncle-nearest-events-calendar-v1-openapi.json",
+   "openapi/_original/uncle-nearest-tec-v1-openapi.json"
+  ]
+ },
+ {
+  "slug": "united-airlines",
+  "specs": [
+   "openapi/_original/united-airlines-ndc-openapi.yml"
+  ]
+ },
+ {
+  "slug": "us-dot",
+  "specs": [
+   "openapi/_original/dot-childseats-api-openapi.yml",
+   "openapi/_original/dot-equipment-api-openapi.yml",
+   "openapi/_original/dot-ewr-api-openapi.yml",
+   "openapi/_original/dot-foreigncampaigns-api-openapi.yml",
+   "openapi/_original/dot-safetyissues-api-openapi.yml",
+   "openapi/_original/dot-tires-api-openapi.yml",
+   "openapi/_original/dot-vehicles-api-openapi.yml",
+   "openapi/_original/us-dot-faa-aeronautic-product-release-api-openapi.yml",
+   "openapi/_original/us-dot-faa-air-carrier-prd-api-openapi.yml",
+   "openapi/_original/us-dot-faa-airport-status-web-service-openapi.yml",
+   "openapi/_original/us-dot-faa-safety-assurance-system-api-openapi.yml",
+   "openapi/_original/us-dot-its-jpo-ode-rest-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "valhalla",
+  "specs": [
+   "openapi/_original/openapi.yaml"
+  ]
+ },
+ {
+  "slug": "vatsim",
+  "specs": [
+   "openapi/_original/aip.yaml",
+   "openapi/_original/connect.yaml",
+   "openapi/_original/core-api.json",
+   "openapi/_original/data.yaml",
+   "openapi/_original/events-v1.yaml",
+   "openapi/_original/events-v2.yaml",
+   "openapi/_original/metar.yaml",
+   "openapi/_original/slurper.yaml"
+  ]
+ },
+ {
+  "slug": "viator",
+  "specs": [
+   "openapi/_original/viator-affiliate-api-v1-openapi.json",
+   "openapi/_original/viator-merchant-api-v1-openapi.json",
+   "openapi/_original/viator-partner-api-v2-openapi.json",
+   "openapi/_original/viator-reservation-system-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "webjet",
+  "specs": [
+   "openapi/_original/webjet-tripninja-adminpanel-refresh-token-openapi.yml",
+   "openapi/_original/webjet-tripninja-farestructure-generate-solutions-openapi.yml",
+   "openapi/_original/webjet-tripninja-farestructure-get-searches-openapi.yml",
+   "openapi/_original/webjet-tripninja-farestructure-report-book-openapi.yml",
+   "openapi/_original/webjet-tripninja-farestructure-report-cancel-openapi.yml",
+   "openapi/_original/webjet-tripninja-flights-core-openapi.yml",
+   "openapi/_original/webjet-tripninja-hotels-openapi.yml",
+   "openapi/_original/webjet-tripninja-msdp-openapi.yml",
+   "openapi/_original/webjet-tripninja-pricing-booking-openapi.yml",
+   "openapi/_original/webjet-tripninja-smartflights-generate-solutions-openapi.yml",
+   "openapi/_original/webjet-tripninja-smartflights-get-searches-openapi.yml",
+   "openapi/_original/webjet-tripninja-smartflights-report-book-openapi.yml",
+   "openapi/_original/webjet-tripninja-smartflights-report-cancel-openapi.yml",
+   "openapi/_original/webjet-tripninja-v2-booking-openapi.yml",
+   "openapi/_original/webjet-tripninja-v2-core-openapi.yml",
+   "openapi/_original/webjet-tripninja-virtual-interlining-generate-solutions-openapi.yml",
+   "openapi/_original/webjet-tripninja-virtual-interlining-get-searches-openapi.yml"
+  ]
+ },
+ {
+  "slug": "wego",
+  "specs": [
+   "openapi/_original/wego-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "wetravel",
+  "specs": [
+   "openapi/_original/wetravel-partner-openapi.json"
+  ]
+ },
+ {
+  "slug": "wisk-ai",
+  "specs": [
+   "openapi/_original/wisk-ai-openapi.yml"
+  ]
+ },
+ {
+  "slug": "withlocals",
+  "specs": [
+   "openapi/_original/withlocals-partner-api-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "worlddataapi",
+  "specs": [
+   "openapi/_original/openapi.json"
+  ]
+ },
+ {
+  "slug": "zamna",
+  "specs": [
+   "openapi/_original/zamna-paxcheck-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "zcal",
+  "specs": [
+   "openapi/_original/zcal-openapi.yml"
+  ]
+ },
+ {
+  "slug": "znanylekarz",
+  "specs": [
+   "openapi/_original/znanylekarz-integrations-api-openapi.json",
+   "openapi/_original/znanylekarz-integrations-api.yml"
+  ]
+ },
+ {
+  "slug": "zoca",
+  "specs": [
+   "openapi/_original/zoca-platform-openapi.yml",
+   "openapi/_original/zoca-platform-swagger.json",
+   "openapi/_original/zoca-public-openapi.yml",
+   "openapi/_original/zoca-public-swagger.json",
+   "openapi/_original/zoca-tasks-openapi.yml",
+   "openapi/_original/zoca-tasks-swagger.json"
+  ]
+ },
+ {
+  "slug": "zocdoc",
+  "specs": [
+   "openapi/_original/zocdoc-zocdoc-api-openapi.yml"
+  ]
+ }
+]

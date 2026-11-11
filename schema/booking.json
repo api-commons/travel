@@ -1,0 +1,178 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/travel/main/schema/booking.json",
+  "title": "Booking",
+  "description": "The common booking in Travel and Lodging, distilled from 57 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.772,
+      "x-commons-providers": 44,
+      "x-commons-spellings": [
+        "id",
+        "bookingId",
+        "uuid",
+        "reservationId",
+        "reservation_id",
+        "code"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.702,
+      "x-commons-providers": 40,
+      "x-commons-spellings": [
+        "status",
+        "bookingStatus",
+        "reservation_status",
+        "state",
+        "reservationStatus",
+        "Status"
+      ]
+    },
+    "check_in": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.368,
+      "x-commons-providers": 21,
+      "x-commons-spellings": [
+        "arrival",
+        "start",
+        "check_in",
+        "startDate",
+        "arrival_date",
+        "checkin_date",
+        "checkin",
+        "from"
+      ]
+    },
+    "check_out": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.368,
+      "x-commons-providers": 21,
+      "x-commons-spellings": [
+        "departure",
+        "end",
+        "check_out",
+        "departure_date",
+        "endDate",
+        "checkout_date",
+        "checkout",
+        "to"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.368,
+      "x-commons-providers": 21,
+      "x-commons-spellings": [
+        "createdAt",
+        "created_at",
+        "created",
+        "booked_at",
+        "creationDate"
+      ],
+      "format": "date-time"
+    },
+    "guest_ids": {
+      "type": "object",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.368,
+      "x-commons-providers": 21,
+      "x-commons-spellings": [
+        "guests",
+        "customer",
+        "guest",
+        "booker",
+        "customer_id",
+        "travellers",
+        "travelers",
+        "guest_id"
+      ]
+    },
+    "metadata": {
+      "type": "object",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.263,
+      "x-commons-providers": 15,
+      "x-commons-spellings": [
+        "metadata",
+        "attributes",
+        "customFields",
+        "metaData",
+        "custom",
+        "custom_fields"
+      ]
+    },
+    "updated_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.246,
+      "x-commons-providers": 14,
+      "x-commons-spellings": [
+        "updatedAt",
+        "updated_at",
+        "modified",
+        "lastModified",
+        "modified_at",
+        "updated"
+      ],
+      "format": "date-time"
+    },
+    "currency": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.211,
+      "x-commons-providers": 12,
+      "x-commons-spellings": [
+        "currency",
+        "currency_code",
+        "currencyCode",
+        "CurrencyCode"
+      ]
+    },
+    "hotel_id": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.211,
+      "x-commons-providers": 12,
+      "x-commons-spellings": [
+        "property_id",
+        "propertyId",
+        "hotel",
+        "listing_id",
+        "property",
+        "hotelId"
+      ]
+    },
+    "price": {
+      "type": "number",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.211,
+      "x-commons-providers": 12,
+      "x-commons-spellings": [
+        "totalPrice",
+        "price",
+        "total_amount",
+        "total_price",
+        "Amount"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "travel",
+    "concept": "booking",
+    "providers": 57,
+    "generated": "2026-11-10",
+    "version": "0.1.0-draft.20261110",
+    "status": "draft"
+  }
+}

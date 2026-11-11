@@ -1,0 +1,15 @@
+provider: travel-risk-api
+apis_io: https://apis.io/providers/travel-risk-api/
+context: travel
+generated: '2026-11-10'
+concepts:
+  booking:
+    path_segment:
+    - trips
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/travel-risk-api-openapi.json#DELETE /api/v1/trips/{trip_id}
+    - openapi/_original/travel-risk-api-openapi.json#GET /api/v1/trips
+    - openapi/_original/travel-risk-api-openapi.json#GET /api/v1/trips/{trip_id}
+    - openapi/_original/travel-risk-api-openapi.json#POST /api/v1/trips

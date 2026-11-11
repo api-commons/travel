@@ -1,0 +1,18 @@
+provider: travelperk
+apis_io: https://apis.io/providers/travelperk/
+context: travel
+generated: '2026-11-10'
+concepts:
+  booking:
+    path_segment:
+    - trips
+    properties:
+      id: id
+      status: status
+      check_in: start_date
+      check_out: end_date
+      updated_at: modified
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/travelperk-openapi.yml#GET /trips
+    - openapi/_original/travelperk-openapi.yml#GET /trips/{id}

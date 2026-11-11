@@ -1,0 +1,123 @@
+context: travel
+name: Travel and Lodging
+intro: >-
+  The common travel vocabulary -- the hotels and stays a traveller books, the room types
+  and rate plans behind the price, the reservations themselves, the guests on them and the
+  flights that get them there -- distilled from the APIs that already exist.
+tags: [Travel, Hospitality, Booking, Hotels, Airlines, Aviation, Vacation Rentals, Tourism, Online Travel, Short-Term Rentals]
+
+envelope: [_links, _pagination, _results, data, success, errors, warnings, count, total, page, meta, links,
+           value, results, next, previous, has_more, message, status_code, ids, next_page, previous_page,
+           page_info, cursor, total_count, per_page, total_pages, current_page, object, url, dictionaries]
+
+common_fields:
+  id: [uuid, guid, object_id, record_id, code, hotel_id, property_id, reservation_id, booking_id]
+  created_at: [created, created_date, date_created, create_time, creation_date, created_on, booked_at, booking_date]
+  updated_at: [updated, updated_date, modified_at, last_modified, date_modified, update_time, modified_date, modified]
+  metadata: [meta_data, custom_fields, custom, attributes, properties]
+  status: [state, reservation_status, booking_status]
+  name: [title, display_name, label, hotel_name, property_name]
+  description: [notes, note, details, summary]
+  currency: [currency_code, iso_currency_code]
+  check_in: [arrival, arrival_date, checkin, check_in_date, start_date, from, checkin_date, start]
+  check_out: [departure, departure_date, checkout, check_out_date, end_date, to, checkout_date, end]
+  hotel_id: [hotel, property_id, property, listing_id, accommodation_id]
+  price: [total, amount, total_price, total_amount, price_total, grand_total, rate_amount]
+
+concepts:
+  booking:
+    segments: [bookings, booking, reservations, reservation, stays, trips, orders@flights|air|booking|hotels]
+    aliases:
+      guest_ids: [guests, guest, guest_id, travelers, travellers, primary_guest, booker, customer_id, customer]
+      confirmation_number: [confirmation_code, confirmation_id, reference, booking_reference, pnr, locator, record_locator]
+      room_id: [room, rooms, room_type, room_type_id, room_type_code, unit_type_id]
+      rate_plan_id: [rate_plan, rate_plan_code, rate_code, rate_id]
+      adults: [number_of_adults, adult_count, guests_count, occupancy, num_guests, pax]
+      children: [number_of_children, child_count, kids]
+      channel: [source, booking_source, ota, channel_code, origin]
+      cancelled_at: [canceled_at, cancellation_date, cancelled_date]
+  hotel:
+    # A bare /properties is how Expedia and Booking.com name hotels; it counts at a provider
+    # that also takes reservations (property management uses the same word for buildings).
+    requires: [booking]
+    segments: [hotels, hotel, accommodations, lodgings, properties, property, stays@search, listings@vacation|rentals]
+    aliases:
+      address: [location, street_address, address_line1]
+      star_rating: [rating, stars, category, star_rating_code]
+      latitude: [lat, geocode_latitude]
+      longitude: [lng, lon, long]
+      chain_code: [chain, brand, brand_code, chain_id]
+      amenities: [facilities, features, amenity_codes]
+      time_zone: [timezone, tz]
+  room:
+    requires: [booking]
+    segments: [rooms, room, room_types, room-types, roomtypes, unit_types, accommodation_types, room_categories]
+    aliases:
+      max_occupancy: [occupancy, max_guests, capacity, max_persons, max_adults]
+      bed_type: [beds, bed_types, bedding]
+      quantity: [count, inventory, number_of_rooms, total_rooms]
+  rate_plan:
+    requires: [booking]
+    path: /rate-plans
+    segments: [rate_plans, rate-plans, rateplans, rates, rate, pricing_plans, tariffs]
+    aliases:
+      code: [rate_plan_code, rate_code]
+      meal_plan: [board, board_type, meal_plan_code, breakfast_included]
+      refundable: [is_refundable, cancellation_policy, cancellation_policies, non_refundable]
+      room_id: [room, room_type, room_type_id, room_type_code]
+  guest:
+    requires: [booking]
+    segments: [guests, guest, travelers, travellers, passengers, passenger, customers@hotels|reservations|pms]
+    aliases:
+      first_name: [firstname, given_name, given_names]
+      last_name: [lastname, surname, family_name]
+      email: [email_address, emails]
+      phone: [phone_number, phones, mobile]
+      date_of_birth: [dob, birth_date, born_on]
+      nationality: [country, citizenship, nationality_code]
+      loyalty_number: [loyalty_id, membership_number, frequent_flyer_number, loyalty_programme_accounts]
+  flight:
+    segments: [flights, flight, flight_offers, flight-offers, flightoffers, air_offers, segments@flights|offers|air, offers@air|flights, schedules@flights|air]
+    aliases:
+      origin: [departure_airport, from, origin_airport, departure, departure_iata, origin_code]
+      destination: [arrival_airport, to, destination_airport, arrival, arrival_iata, destination_code]
+      departs_at: [departure_time, departing_at, departure_date_time, scheduled_departure, departure_at]
+      arrives_at: [arrival_time, arriving_at, arrival_date_time, scheduled_arrival, arrival_at]
+      carrier: [airline, marketing_carrier, operating_carrier, carrier_code, airline_code, iata_code]
+      flight_number: [number, marketing_carrier_flight_number, flight_no]
+      duration: [elapsed_time, flight_duration]
+
+exclude:
+  booking:
+    agendapro: appointment bookings (scheduling context)
+    cliniko: clinic appointment bookings (scheduling context)
+    cargoai: air-cargo bookings
+  rate_plan:
+    avis-budget: car-rental rates
+    lighthouse-travel: historic rate-shopping data, not a rate plan
+duplicates:
+  crunchtime: [crunchtime-information-systems]
+  cvent: [cvent-hospitality-cloud]
+  dot: [department-of-transportation]
+
+findings:
+  - "A booking agrees only on id and status. Check-in, check-out and the guests sit at 37%:
+    hotel stays, flights, tours and car rentals are all bookings with different shapes."
+  - "A hotel agrees on name, address and id; amenities and star rating are modelled by too few
+    to share."
+  - "Flights agree on nothing, not even an id (42%): NDC-style offers, schedules and flight
+    status are three different resources published under one word."
+  - "Guests and rooms are thin (5-7 providers): property-management systems and channel
+    managers keep their APIs to partners."
+decisions:
+  - "A booking is `/bookings`: bookings lead reservations 42 to 19, and the scheduling context
+    uses `/appointments`, so the word is free. Appointment bookings (AgendaPro, Cliniko) are
+    excluded here and counted there."
+  - "A hotel is `/hotels`; Expedia's and Booking.com's bare `/properties` counts as a hotel at a
+    provider that also takes bookings, because property management uses the same word for
+    buildings."
+  - "A room is `/rooms` (rooms lead room types 7 to 2); a rate plan stays `/rate-plans`, though
+    `rates` leads, because a bare rate is FX or tax elsewhere."
+  - "Passengers and travellers are guests."
+  - "Car-rental rates and air-cargo bookings are out of scope and excluded by name."
+  - "Duplicates merged: CrunchTime, Cvent, DOT."

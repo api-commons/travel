@@ -1,0 +1,50 @@
+provider: tui-group
+apis_io: https://apis.io/providers/tui-group/
+context: travel
+generated: '2026-11-10'
+concepts:
+  booking:
+    path_segment:
+    - bookings
+    - booking
+    properties:
+      status: bookingStatus
+      currency: currencyCode
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/tui-group-tui-newskies-digital-api-openapi.yml#GET /api/nsk/v1/booking
+    - openapi/_original/tui-group-tui-newskies-digital-api-openapi.yml#GET /api/nsk/v1/bookings/{recordLocator}
+    - openapi/_original/tui-group-tui-newskies-digital-api-openapi.yml#GET /api/nsk/v1/manifest/{legKey}/bookings
+    - openapi/_original/tui-group-tui-newskies-digital-api-openapi.yml#GET /api/nsk/v1/settings/booking
+    - openapi/_original/tui-group-tui-newskies-digital-api-openapi.yml#GET /api/nsk/v1/user/bookings
+  hotel:
+    path_segment:
+    - properties
+    - accommodations
+    properties:
+      name:
+      - name
+      - hotelName
+      id:
+      - id
+      - code
+      amenities: facilities
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/tui-group-tui-meta-partner-package-live-search-openapi.yml#GET /{market}/packages/{agent}/accommodations
+    - openapi/_original/tui-group-tui-newskies-digital-api-openapi.yml#DELETE /api/nsk/v1/trip/{legKey}/seats/{unitKey}/properties
+    - openapi/_original/tui-group-tui-newskies-digital-api-openapi.yml#GET /api/nsk/v1/trip/{legKey}/seats/properties
+    - openapi/_original/tui-group-tui-newskies-digital-api-openapi.yml#GET /api/nsk/v1/trip/{legKey}/seats/{unitKey}/properties
+    - openapi/_original/tui-group-tui-newskies-digital-api-openapi.yml#GET /api/nsk/v2/booking/equipment/legs/{legKey}/properties
+  guest:
+    path_segment:
+    - passengers
+    - passenger
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/tui-group-tui-newskies-digital-api-openapi.yml#DELETE /api/dcs/v1/boarding/legs/{legKey}/passengers
+    - openapi/_original/tui-group-tui-newskies-digital-api-openapi.yml#DELETE /api/dcs/v1/boarding/{recordLocator}/legs/{legKey}/passengers/{passengerKey}
+    - openapi/_original/tui-group-tui-newskies-digital-api-openapi.yml#DELETE /api/dcs/v1/verifiedTravelDocuments/{recordLocator}/segments/{segmentKey}/passengers/{passengerKey}
+    - openapi/_original/tui-group-tui-newskies-digital-api-openapi.yml#GET /api/nsk/v1/booking/passengers
+    - openapi/_original/tui-group-tui-newskies-digital-api-openapi.yml#GET /api/nsk/v1/booking/passengers/{passengerKey}

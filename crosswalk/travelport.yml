@@ -1,0 +1,14 @@
+provider: travelport
+apis_io: https://apis.io/providers/travelport/
+context: travel
+generated: '2026-11-10'
+concepts:
+  booking:
+    path_segment:
+    - reservations
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/travelport-openapi.yml#GET /air/book/reservation/reservations/{Identifier}
+    - openapi/_original/travelport-openapi.yml#POST /air/book/reservation/reservations/{Identifier}
+    - openapi/_original/travelport-openapi.yml#POST /air/modify/reservations/{Identifier}

@@ -1,0 +1,19 @@
+provider: withlocals
+apis_io: https://apis.io/providers/withlocals/
+context: travel
+generated: '2026-11-10'
+concepts:
+  booking:
+    path_segment:
+    - bookings
+    properties:
+      id: id
+      status: status
+      created_at: createdAt
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/withlocals-partner-api-openapi.yaml#DELETE /bookings/{bookingId}
+    - openapi/_original/withlocals-partner-api-openapi.yaml#GET /bookings
+    - openapi/_original/withlocals-partner-api-openapi.yaml#GET /bookings/{bookingId}
+    - openapi/_original/withlocals-partner-api-openapi.yaml#PATCH /bookings/{bookingId}
+    - openapi/_original/withlocals-partner-api-openapi.yaml#POST /bookings

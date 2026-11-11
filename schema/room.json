@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/travel/main/schema/room.json",
+  "title": "Room",
+  "description": "The common room in Travel and Lodging, distilled from 7 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.714,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "id",
+        "roomId",
+        "code"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.714,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "name",
+        "title"
+      ]
+    },
+    "hotel_id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.571,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "property_id",
+        "hotel",
+        "hotelId",
+        "propertyId"
+      ]
+    },
+    "description": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.429,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "description"
+      ]
+    },
+    "max_occupancy": {
+      "type": "integer",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.429,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "capacity",
+        "maxAdults",
+        "maxOccupancy"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "travel",
+    "concept": "room",
+    "providers": 7,
+    "generated": "2026-11-10",
+    "version": "0.1.0-draft.20261110",
+    "status": "draft"
+  }
+}

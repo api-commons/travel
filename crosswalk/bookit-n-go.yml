@@ -1,0 +1,39 @@
+provider: bookit-n-go
+apis_io: https://apis.io/providers/bookit-n-go/
+context: travel
+generated: '2026-11-10'
+concepts:
+  booking:
+    path_segment:
+    - bookings
+    - trips
+    properties:
+      id:
+      - id
+      - bookingId
+      status:
+      - bookingStatus
+      - status
+      created_at: createdAt
+      guest_ids: travellers
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/bookit-n-go-openapi.yaml#GET /flights/bookings/{bookingId}
+    - openapi/_original/bookit-n-go-openapi.yaml#GET /hotels/bookings/{bookingId}
+    - openapi/_original/bookit-n-go-openapi.yaml#GET /trips
+    - openapi/_original/bookit-n-go-openapi.yaml#GET /trips/{tripId}
+    - openapi/_original/bookit-n-go-openapi.yaml#POST /flights/bookings
+  hotel:
+    path_segment:
+    - hotels
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/bookit-n-go-openapi.yaml#POST /recommendations/hotels
+  flight:
+    path_segment:
+    - flights
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/bookit-n-go-openapi.yaml#POST /recommendations/flights

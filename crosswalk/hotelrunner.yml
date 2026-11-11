@@ -1,0 +1,21 @@
+provider: hotelrunner
+apis_io: https://apis.io/providers/hotelrunner/
+context: travel
+generated: '2026-11-10'
+concepts:
+  booking:
+    path_segment:
+    - reservations
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/hotelrunner-openapi.yml#GET /reservations
+  room:
+    path_segment:
+    - rooms
+    properties:
+      name: name
+      description: description
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/hotelrunner-openapi.yml#GET /rooms

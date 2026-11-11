@@ -1,0 +1,16 @@
+provider: flightaware
+apis_io: https://apis.io/providers/flightaware/
+context: travel
+generated: '2026-11-10'
+concepts:
+  flight:
+    path_segment:
+    - flights
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/flightaware-openapi.yml#GET /airports/{id}/flights
+    - openapi/_original/flightaware-openapi.yml#GET /flights/{ident}
+    - openapi/_original/flightaware-openapi.yml#GET /foresight/flights/{ident}
+    - openapi/_original/flightaware-openapi.yml#GET /history/flights/{ident}
+    - openapi/_original/flightaware-openapi.yml#GET /history/operators/{id}/flights

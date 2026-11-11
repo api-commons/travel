@@ -1,0 +1,25 @@
+provider: american-airlines
+apis_io: https://apis.io/providers/american-airlines/
+context: travel
+generated: '2026-11-10'
+concepts:
+  booking:
+    path_segment:
+    - bookings
+    properties:
+      id: id
+      status: status
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/american-airlines-runway-developer-api-openapi.yml#GET /bookings/{bookingId}
+    - openapi/_original/american-airlines-runway-developer-api-openapi.yml#POST /bookings
+  flight:
+    path_segment:
+    - flights
+    properties:
+      id: id
+      flight_number: flightNumber
+      status: status
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/american-airlines-runway-developer-api-openapi.yml#GET /flights

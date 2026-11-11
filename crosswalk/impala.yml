@@ -1,0 +1,54 @@
+provider: impala
+apis_io: https://apis.io/providers/impala/
+context: travel
+generated: '2026-11-10'
+concepts:
+  booking:
+    path_segment:
+    - bookings
+    properties:
+      id: bookingId
+      status: status
+      check_in: start
+      check_out: end
+      created_at: createdAt
+      updated_at: updatedAt
+      hotel_id: hotel
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/impala-hotels-openapi-original.json#DELETE /bookings/{bookingId}
+    - openapi/_original/impala-hotels-openapi-original.json#GET /bookings
+    - openapi/_original/impala-hotels-openapi-original.json#GET /bookings/{bookingId}
+    - openapi/_original/impala-hotels-openapi-original.json#POST /bookings
+    - openapi/_original/impala-hotels-openapi-original.json#PUT /bookings/{bookingId}
+  hotel:
+    path_segment:
+    - hotels
+    properties:
+      name: name
+      address:
+      - address
+      - location
+      currency: currency
+      description: description
+      amenities: amenities
+      check_in: checkIn
+      check_out: checkOut
+      hotel_id: hotelId
+      star_rating: starRating
+      time_zone: timezone
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/impala-hotels-openapi-original.json#GET /hotels
+    - openapi/_original/impala-hotels-openapi-original.json#GET /hotels/{hotelId}
+  rate_plan:
+    path_segment:
+    - rate-plans
+    properties:
+      hotel_id: hotelId
+      id: ratePlanId
+      description: description
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/impala-hotels-openapi-original.json#GET /hotels/{hotelId}/rate-plans
+    - openapi/_original/impala-hotels-openapi-original.json#GET /hotels/{hotelId}/rate-plans/{ratePlanId}

@@ -1,0 +1,16 @@
+provider: aloft
+apis_io: https://apis.io/providers/aloft/
+context: travel
+generated: '2026-11-10'
+concepts:
+  flight:
+    path_segment:
+    - flights
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/aloft-openapi-original.json#DELETE /v1/account/{account_id}/flights/{flight_id}
+    - openapi/_original/aloft-openapi-original.json#GET /v1/account/{account_id}/flights
+    - openapi/_original/aloft-openapi-original.json#GET /v1/account/{account_id}/flights/{flight_id}
+    - openapi/_original/aloft-openapi-original.json#POST /v1/account/{account_id}/flight-sessions/{flight_session_uuid}/flights
+    - openapi/_original/aloft-openapi-original.json#POST /v1/account/{account_id}/flights

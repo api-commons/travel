@@ -1,0 +1,18 @@
+provider: parkwhiz
+apis_io: https://apis.io/providers/parkwhiz/
+context: travel
+generated: '2026-11-10'
+concepts:
+  booking:
+    path_segment:
+    - bookings
+    properties:
+      id: id
+      status: status
+      price: price
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/parkwhiz-openapi.yml#DELETE /bookings/{booking_id}
+    - openapi/_original/parkwhiz-openapi.yml#GET /bookings
+    - openapi/_original/parkwhiz-openapi.yml#GET /bookings/{booking_id}
+    - openapi/_original/parkwhiz-openapi.yml#POST /bookings

@@ -1,0 +1,43 @@
+provider: webjet
+apis_io: https://apis.io/providers/webjet/
+context: travel
+generated: '2026-11-10'
+concepts:
+  booking:
+    path_segment:
+    - booking
+    properties:
+      status: status
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/webjet-tripninja-flights-core-openapi.yml#POST /booking/
+    - openapi/_original/webjet-tripninja-msdp-openapi.yml#POST /msdp/booking/
+  hotel:
+    path_segment:
+    - hotels
+    properties:
+      name: hotel_name
+      address: address
+      currency: currency
+      check_in: check_in_date
+      check_out: check_out_date
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/webjet-tripninja-hotels-openapi.yml#DELETE /price/hotels/{endpoint}/
+    - openapi/_original/webjet-tripninja-hotels-openapi.yml#POST /details/hotels/{endpoint}/
+    - openapi/_original/webjet-tripninja-hotels-openapi.yml#POST /price/hotels/{endpoint}/
+    - openapi/_original/webjet-tripninja-hotels-openapi.yml#POST /rules/hotels/{endpoint}/
+    - openapi/_original/webjet-tripninja-hotels-openapi.yml#POST /search/hotels/{endpoint}
+  flight:
+    path_segment:
+    - flight
+    - flights
+    properties:
+      currency: currency
+      segments: segments
+      source: source
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/webjet-tripninja-flights-core-openapi.yml#POST /search/flights/{endpoint}/
+    - openapi/_original/webjet-tripninja-v2-booking-openapi.yml#POST /book/flight/{endpoint}/
+    - openapi/_original/webjet-tripninja-v2-booking-openapi.yml#POST /price/flight/{endpoint}/

@@ -1,0 +1,30 @@
+provider: amex-gbt
+apis_io: https://apis.io/providers/amex-gbt/
+context: travel
+generated: '2026-11-10'
+concepts:
+  booking:
+    path_segment:
+    - bookings
+    properties:
+      id: bookingId
+      metadata: metadata
+      price: totalPrice
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/amex-gbt-booking-api-openapi.json#GET /v1/bookings/{bookingId}
+    - openapi/_original/amex-gbt-duty-of-care-api-openapi.json#GET /v1/bookings/{resourceId}
+    - openapi/_original/amex-gbt-duty-of-care-api-openapi.json#POST /v1/bookings
+    - openapi/_original/amex-gbt-service-dutyofcare-openapi.json#GET /v1/bookings/{resourceId}
+    - openapi/_original/amex-gbt-service-dutyofcare-openapi.json#POST /v1/bookings
+  hotel:
+    path_segment:
+    - hotel
+    properties:
+      currency: currency_code
+      check_in: start_date
+      check_out: end_date
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/amex-gbt-reporting-api-openapi.json#POST /v1/transactions/hotel
+    - openapi/_original/amex-gbt-service-bi-openapi.json#POST /v1/transactions/hotel

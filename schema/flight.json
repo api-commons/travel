@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/travel/main/schema/flight.json",
+  "title": "Flight",
+  "description": "The common flight in Travel and Lodging, distilled from 12 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.417,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "id"
+      ]
+    },
+    "currency": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.333,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "currencyCode",
+        "currency"
+      ]
+    },
+    "price": {
+      "type": "object",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.333,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "price",
+        "total_amount"
+      ]
+    },
+    "flight_number": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.25,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "flightNumber",
+        "flight_number"
+      ]
+    },
+    "itineraries": {
+      "type": "array",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.25,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "itineraries"
+      ]
+    },
+    "segments": {
+      "type": "array",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.25,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "segments"
+      ]
+    },
+    "source": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.25,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "source"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.25,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "status"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "travel",
+    "concept": "flight",
+    "providers": 12,
+    "generated": "2026-11-10",
+    "version": "0.1.0-draft.20261110",
+    "status": "draft"
+  }
+}
